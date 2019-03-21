@@ -10,9 +10,6 @@
         <relativePath>pom.xml</relativePath>
     </parent>
 
-    <description>Cloud Common </description>
-    <artifactId>common</artifactId>
-    <!--<modules>-->
-        <!--<module>generator</module>-->
-    <!--</modules>-->
+    <description>Cloud Oauth </description>
+    <artifactId>oauth</artifactId>
 </project>

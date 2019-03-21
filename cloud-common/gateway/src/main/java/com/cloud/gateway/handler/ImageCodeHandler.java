@@ -36,6 +36,14 @@ import java.util.concurrent.TimeUnit;
 public class ImageCodeHandler implements HandlerFunction<ServerResponse> {
     private final Producer producer;
     private final RedisTemplate redisTemplate;
+    /**
+     * 验证码前缀
+     */
+    String DEFAULT_CODE_KEY = "DEFAULT_CODE_KEY_";
+    /**
+     * 默认生成图形验证码过期时间
+     */
+    int DEFAULT_IMAGE_EXPIRE = 60;
 
     @Override
     public Mono<ServerResponse> handle(ServerRequest serverRequest) {
@@ -45,7 +53,7 @@ public class ImageCodeHandler implements HandlerFunction<ServerResponse> {
 
         //保存验证码信息
         String randomStr = serverRequest.queryParam("randomStr").get();
-        redisTemplate.opsForValue().set(CommonConstants.DEFAULT_CODE_KEY + randomStr, text, SecurityConstants.DEFAULT_IMAGE_EXPIRE, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(DEFAULT_CODE_KEY + randomStr, text, DEFAULT_IMAGE_EXPIRE, TimeUnit.SECONDS);
 
         // 转换流信息写出
         FastByteArrayOutputStream os = new FastByteArrayOutputStream();

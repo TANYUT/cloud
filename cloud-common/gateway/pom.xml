@@ -10,8 +10,8 @@
         <relativePath>pom.xml</relativePath>
     </parent>
 
-    <description>Cloud Geteway 网关服务</description>
-    <artifactId>geteway</artifactId>
+    <description>Cloud Gateway 网关服务</description>
+    <artifactId>gateway</artifactId>
 
     <dependencies>
         <dependency>

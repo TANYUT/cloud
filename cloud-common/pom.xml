@@ -14,11 +14,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>generator</module>
-        <!--<module>au-eureka</module>-->
-        <!--<module>au-gateway</module>-->
-        <!--<modul
-        e>exam-train</module>-->
-        <!--<module>exam-oms</module>-->
+        <module>eureka</module>
+        <module>gateway</module>
+        <module>config</module>
+        <module>common</module>
+        <module>oauth</module>
     </modules>
 <!--
 
