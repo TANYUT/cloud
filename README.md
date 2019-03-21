@@ -1,7 +1,7 @@
 #查看全部更改的
 # git add -A   
 #提交到本地仓库
-# git commit -m "mybaris 代码生成器"
+# git commit -m "t"
 #提交到GitHub
 # git push
 # 显示修改文件
