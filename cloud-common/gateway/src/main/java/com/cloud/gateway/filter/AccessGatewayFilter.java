@@ -23,7 +23,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.a
  *
  * @Title AccessGatewayFilter.java
  * @Package com.cloud.gateway.filter
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 17:28
  */
 @Slf4j

@@ -12,7 +12,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  *
  * @Title ConfigApplication.java
  * @Package com.cloud.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 16:00
  */
 @Slf4j

@@ -35,7 +35,7 @@
         <lombok.version>1.16.20</lombok.version>
         <jjwt.version>0.9.0</jjwt.version>
         <ttl.version>2.2.0</ttl.version>
-        <fastjson.version>1.2.46</fastjson.version>
+        <fastjson.version>1.2.56</fastjson.version>
         <javadoc.version>3.0.0</javadoc.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>

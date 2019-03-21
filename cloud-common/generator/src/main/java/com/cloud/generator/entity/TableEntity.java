@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @Title TableEntity.java
  * @Package com.cloud.codegen.model.entity
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 17:43
  */
 @Data

@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @Title ImageCodeHandler.java
  * @Package com.cloud.gateway.handler
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 17:27
  */
 @Slf4j

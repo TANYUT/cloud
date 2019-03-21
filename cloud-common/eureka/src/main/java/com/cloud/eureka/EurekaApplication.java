@@ -15,7 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  *
  * @Title EurekaApplication.java
  * @Package com.cloud.eureka
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 15:43
  */
 @Slf4j

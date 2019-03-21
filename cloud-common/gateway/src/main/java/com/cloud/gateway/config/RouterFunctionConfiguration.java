@@ -18,7 +18,7 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
  *
  * @Title RouterFunctionConfiguration.java
  * @Package com.cloud.gateway.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au_t@qq.com">au .T</a>
  * @Date 2019/3/20 17:26
  */
 @Slf4j
