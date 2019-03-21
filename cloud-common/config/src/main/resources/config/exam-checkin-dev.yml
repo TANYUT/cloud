@@ -1,0 +1,27 @@
+# OAuth2 配置
+security:
+  oauth2:
+    client:
+      client-id: ENC(wwp1Y05yu5aCAvHFtMV3rg==)
+      client-secret: ENC(Hvx27sSVqNt1YS/fsOQcSQ==)
+      scope: server
+
+# 数据源
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/exam_checkin?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 123456
+
+# 直接放行URL
+ignore:
+  urls:
+    - /actuator/**
+    - /checkin/page
+
+# 日志级别
+logging:
+  level:
+    com.sinotn.exam.checkin: DEBUG

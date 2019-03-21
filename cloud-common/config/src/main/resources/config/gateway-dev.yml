@@ -1,0 +1,60 @@
+spring:
+  cloud:
+    gateway:
+      locator:
+        enabled: true
+      routes:
+      # 认证中心
+      - id: exam-oauth
+        uri: lb://exam-oauth
+        predicates:
+          - Path=/auth/**
+        filters:
+          - ValidateCodeFilter
+          - PasswordDecoderFilter
+      # 用户管理
+      - id: exam-upms
+        uri: lb://exam-upms
+        predicates:
+          - Path=/admin/**
+        filters:
+          - name: RequestRateLimiter
+            args:
+              key-resolver: '#{@remoteAddrKeyResolver}'
+              redis-rate-limiter.replenishRate: 10
+              redis-rate-limiter.burstCapacity: 20
+          # 降级配置
+          - name: Hystrix
+            args:
+              name: default
+              fallbackUri: 'forward:/fallback'
+      - id: exam-codegen
+        uri: lb://exam-codegen
+        predicates:
+          - Path=/gen/**
+      - id: exam-node
+        uri: lb://exam-node
+        predicates:
+          - Path=/node/**
+      - id: exam-bigdata
+        uri: lb://exam-bigdata
+        predicates:
+          - Path=/bigdata/**
+      - id: exam-checkin
+        uri: lb://exam-checkin
+        predicates:
+          - Path=/checkin/**
+      - id: exam-platform
+        uri: lb://exam-platform
+        predicates:
+          - Path=/platform/**
+
+security:
+  encode:
+    # 前端密码密钥，必须16位
+    key: '1234567887654321'
+
+# 不校验验证码终端
+ignore:
+  clients:
+    - test

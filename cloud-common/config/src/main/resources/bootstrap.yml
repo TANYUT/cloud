@@ -1,0 +1,30 @@
+# 端口号
+server:
+  port: 6660
+# 应用配置
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+  # 配置中心,此处配置的是本地路径，也可以通过Git、SVN配置
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/
+
+# 注册中心配置
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://cloud:cloud@${CLOUD-EUREKA:localhost}:${EUREKA_PORT:6661}/eureka/
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
