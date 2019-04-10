@@ -1,7 +1,5 @@
 package ${package}.${moduleName}.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import ${package}.${moduleName}.entity.${className};
 
@@ -10,7 +8,7 @@ import ${package}.${moduleName}.entity.${className};
  * ${className}Service接口
  * </p>
  * @Title: ${className}Controller.java
- * @Package: ${package}.${moduleName}.controller;
+ * @Package: ${package}.${moduleName}.service;
  *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}

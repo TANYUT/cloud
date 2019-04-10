@@ -1,7 +1,7 @@
-# 加解密根密码
-jasypt:
-  encryptor:
-    password: sinotn #根密码
+## 加解密根密码
+#jasypt:
+#  encryptor:
+#    password: cloud #根密码
 
 spring:
   jackson:
@@ -10,12 +10,16 @@ spring:
     default-property-inclusion: non_null
   redis:
     remote: false        #cachecloud 获取
-    host: ${REDIS_HOST:localhost}
-    port: ${REDIS_PORT:6379}
+#    host: ${REDIS_HOST:localhost}
+    host: localhost
+#    port: ${REDIS_PORT:6379}
+    port: 6379
     password:
   rabbitmq:
-    host: ${RABBIT_MQ_HOST:localhost}
-    port:  ${RABBIT_MQ_PORT:5672}
+#    host: ${RABBIT_MQ_HOST:localhost}
+#    port:  ${RABBIT_MQ_PORT:5672}
+    host: localhost
+    port:  5672
     username: guest
     password: guest
 
@@ -88,4 +92,10 @@ security:
   oauth2:
     resource:
       loadBalanced: true
-      token-info-uri: http://exam-oauth/oauth/check_token
+      token-info-uri: http://auth/oauth/check_token
+
+
+logging:
+  level:
+    com.cloud: DEBUG
+    org.springframework.web: TRACE

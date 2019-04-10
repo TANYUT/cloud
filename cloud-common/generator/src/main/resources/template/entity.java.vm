@@ -16,7 +16,7 @@ import java.math.BigDecimal;
  * ${className}实体类
  * </p>
  * @Title: ${className}Controller.java
- * @Package: ${package}.${moduleName}.controller;
+ * @Package: ${package}.${moduleName}.entity;
  *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}

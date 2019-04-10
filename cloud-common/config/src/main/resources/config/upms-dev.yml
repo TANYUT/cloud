@@ -1,0 +1,23 @@
+## OAuth2 配置
+#security:
+#  oauth2:
+#    client:
+#      client-id: ENC(eT2rgSnKPtodUtU6uDmrqQ==)
+#      client-secret: ENC(Jn063Lk7vTXoGk9JZYBvFw==)
+#      scope: server
+
+# 数据源
+#spring:
+#  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/exam_upms?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+#    username: root
+#    password: root
+
+# 直接放行URL
+ignore:
+  urls:
+#    - /actuator/**
+#    - /user/info/*
+#    - /log/**

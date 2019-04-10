@@ -20,7 +20,8 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://cloud:cloud@${CLOUD-EUREKA:localhost}:${EUREKA_PORT:6661}/eureka/
+#      defaultZone: http://cloud:cloud@${CLOUD-EUREKA:localhost}:${EUREKA_PORT:6661}/eureka/
+      defaultZone: http://sinotn:sinotn@127.0.0.1:8761/eureka/
 
 # 暴露监控端点
 management:

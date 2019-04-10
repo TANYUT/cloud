@@ -1,7 +1,5 @@
 package ${package}.${moduleName}.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import ${package}.${moduleName}.entity.${className};
 import ${package}.${moduleName}.mapper.${className}Mapper;
@@ -13,7 +11,7 @@ import org.springframework.stereotype.Service;
  * ${className}Service实现类
  * </p>
  * @Title: ${className}Controller.java
- * @Package: ${package}.${moduleName}.controller;
+ * @Package:  ${package}.service.impl
  *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}

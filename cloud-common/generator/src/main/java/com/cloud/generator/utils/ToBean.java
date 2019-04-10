@@ -1,6 +1,7 @@
 package com.cloud.generator.utils;
 
 
+import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 
 import java.util.ArrayList;
@@ -160,4 +161,5 @@ public class ToBean {
     public static final <T> T toJavaBean(Class<T> clazz, Object obj) {
         return JSONUtil.parseObj(obj).toBean(clazz);
     }
+
 }

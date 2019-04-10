@@ -13,7 +13,7 @@
     <artifactId>cloud-modules</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <!--<module>generator</module>-->
+        <module>dome-gateway</module>
         <!--<module>eureka</module>-->
         <!--<module>gateway</module>-->
         <!--<module>config</module>-->

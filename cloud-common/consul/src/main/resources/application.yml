@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+pring:
+  application:
+    name: consul-demo
+  cloud:
+    consul:
+    host: localhost
+    port: 9091

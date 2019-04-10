@@ -4,6 +4,8 @@ server:
 
 # Server ID
 spring:
+  cloud:
+    config: false
   # 启用身份认证
   security:
     user:
@@ -11,8 +13,7 @@ spring:
       password: cloud
   application:
     name: eureka
-  cloud:
-    config: false
+
 
 eureka:
   instance:

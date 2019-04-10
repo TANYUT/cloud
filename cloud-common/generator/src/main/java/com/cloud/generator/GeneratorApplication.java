@@ -29,10 +29,10 @@ public class GeneratorApplication {
     //查询库里面所有表的SQL
     String sql = "select table_name tableName, engine, table_comment tableComment, create_time createTime from information_schema.tables  where table_schema = (select database()) and table_name like conca('%', #{tableName}, '%') order by create_time desc";
     private static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static String JDBC_URL = "jdbc:mysql://127.0.0.1:3406/ks_face?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true";
+    private static String JDBC_URL = "jdbc:mysql://127.0.0.1:3406/ks_platform?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true";
     private static String JDBC_USERNAME = "sinotn";
     private static String JDBC_PASSWORD = "123456";
-
+//    private static String PLAN_ID = "ouinvvhbi28JyiHghv4C49QF9sMjvmto";
 
     public static void main(String[] args) throws SQLException, IOException {
         JdbcBean jdbcBean = new JdbcBean(JDBC_DRIVER, JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD);
@@ -41,8 +41,9 @@ public class GeneratorApplication {
 
         //要生成表的list
         List<String> tableNames = new ArrayList<>();
-        tableNames.add("cl_desc_info");
-        tableNames.add("cl_examinee_record");
+        tableNames.add("client_details");
+//        tableNames.add("tr_majors");
+
         //连接数据库
         JdbcUtil jdbcUtil = new JdbcUtil(jdbcBean.getJdbcDriver(),
                 jdbcBean.getJdbcUrl(), jdbcBean.getJdbcUsername(), jdbcBean.getJdbcPassword());
@@ -60,7 +61,7 @@ public class GeneratorApplication {
         }
         IoUtil.close(zip);
         //将文件输出到本地
-        OutputStream out = new FileOutputStream("F:/aaa.zip");
+        OutputStream out = new FileOutputStream("F:/oauth_client_details.zip");
         InputStream is = new ByteArrayInputStream(outputStream.toByteArray());
         byte[] buff = new byte[1024];
         int len = 0;
