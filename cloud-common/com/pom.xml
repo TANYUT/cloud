@@ -26,6 +26,13 @@
             <artifactId>mybatis-plus</artifactId>
             <version>${mybatis-plus.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.t-io/tio-websocket-server -->
+        <dependency>
+            <groupId>org.t-io</groupId>
+            <artifactId>tio-websocket-server</artifactId>
+            <version>3.2.8.v20190326-RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 </project>

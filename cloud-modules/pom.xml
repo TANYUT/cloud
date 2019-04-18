@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>dome-gateway</module>
+        <module>web-flux</module>
         <!--<module>eureka</module>-->
         <!--<module>gateway</module>-->
         <!--<module>config</module>-->

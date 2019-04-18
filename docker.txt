@@ -1,0 +1,5 @@
+docker images   //查看docker 程序镜像   IMAGE ID  程序ID
+docker rmi [IMAGE ID]
+
+docker ps -a    //查看镜像被那个容器占用  CONTAINER ID  容器ID
+docker rm [CONTAINER ID]
