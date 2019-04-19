@@ -1,0 +1,31 @@
+version: '3'
+services:
+  exam-eureka:
+    container_name: exam-eureka
+    build:
+      context: ./
+      dockerfile: Dockerfile-Eureka
+    restart: always
+    ports:
+      - 8761:8761
+
+  exam-config:
+    container_name: exam-config
+    depends_on:
+      - exam-config
+    build:
+      context: ./
+      dockerfile: Dockerfile-Config
+    #容器退出 一直重启容器
+    restart: always
+    ports:
+      - 9762:9762
+    environment:
+      - EUREKA_HOST=exam-eureka
+      - EUREKA_PORT=8761
+      - REDIS_HOST=docker.for.mac.host.internal
+      - REDIS_PORT=6379
+      - MYSQL_HOST=docker.for.mac.host.internal
+      - MYSQL_PORT=3306
+      - RABBIT_MQ_HOST=docker.for.mac.host.internal
+      - RABBIT_MQ_PORT=5672

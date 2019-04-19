@@ -1,0 +1,9 @@
+FROM openjdk:8u181-jdk-alpine
+ARG workdir=/app
+VOLUME ${workdir}
+WORKDIR ${workdir}
+#  需要打包的jar
+ADD ./exam-config.jar app.jar
+EXPOSE 8761
+#设置容器启动时执行的命令
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","-Xmx128m","app.jar"]

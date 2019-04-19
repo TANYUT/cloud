@@ -3,7 +3,59 @@
   <component name="ChangeListManager">
     <list default="true" id="79b624a7-47e6-43b7-aa52-f529d3a78720" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docker.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/controller/ClientDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/controller/ClientDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/entity/ClientDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/entity/ClientDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/mapper/ClientDetailsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/mapper/ClientDetailsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/service/ClientDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/service/ClientDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/service/impl/ClientDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/service/impl/ClientDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/com/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/com/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/java/com/cloud/config/ConfigApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/java/com/cloud/config/ConfigApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/auth-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/auth-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-bigdata-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-bigdata-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-checkin-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-checkin-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-codegen-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-codegen-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-node-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-node-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-platform-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-platform-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/upms-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/upms-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/consul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/consul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/consul/src/main/java/com/cloud/consul/ConsulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/consul/src/main/java/com/cloud/consul/ConsulApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/consul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/consul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/demo/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/demo/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/demo/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/demo/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/controller.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/entity.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/index.js.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/index.js.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/index.vue.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/index.vue.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/mapper.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/mapper.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/mapper.xml.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/mapper.xml.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/menu.sql.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/menu.sql.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/service.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/service.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/serviceImpl.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/src/main/resources/template/serviceImpl.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/upms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/upms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/upms/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/upms/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/upms/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/upms/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/dome-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/dome-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/WebFluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/WebFluxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-common/eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-modules/dome-gateway/target/" />
@@ -31,59 +83,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/reactor/core/publisher/LambdaSubscriber.java">
+        <entry file="file://$PROJECT_DIR$/txt/docker/docker.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_7.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="506">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker.txt">
+        <entry file="file://$PROJECT_DIR$/txt/docker/Dockerfile-Config">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="44">
+              <caret line="2" column="6" selection-start-line="2" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_8.java">
+        <entry file="file://$PROJECT_DIR$/txt/docker/Dockerfile-Eureka">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="110">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,37 +122,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar!/org/reactivestreams/Subscription.java">
+        <entry file="file://$PROJECT_DIR$/txt/docker/docker-compose-base.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="594">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://F:/Java/jdk8/src.zip!/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/reactor/core/publisher/Mono.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3256">
-              <caret line="189" column="20" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="22" />
+            <state relative-caret-position="83798">
+              <caret line="3955" column="27" selection-start-line="3955" selection-start-column="17" selection-end-line="3955" selection-end-column="27" />
+              <folding>
+                <element signature="e#7085#7086#0" expanded="true" />
+                <element signature="e#7140#7141#0" expanded="true" />
+                <element signature="e#8217#8218#0" expanded="true" />
+                <element signature="e#8269#8270#0" expanded="true" />
+                <element signature="e#9198#9199#0" expanded="true" />
+                <element signature="e#9232#9233#0" expanded="true" />
+                <element signature="e#9613#9614#0" expanded="true" />
+                <element signature="e#9661#9662#0" expanded="true" />
+                <element signature="e#10857#10858#0" expanded="true" />
+                <element signature="e#10905#10906#0" expanded="true" />
+                <element signature="e#18428#18429#0" expanded="true" />
+                <element signature="e#18482#18483#0" expanded="true" />
+                <element signature="e#20973#20974#0" expanded="true" />
+                <element signature="e#21022#21023#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/reactor/core/publisher/WorkQueueProcessor.java">
+        <entry file="file://$PROJECT_DIR$/cloud-common/consul/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar!/org/reactivestreams/Publisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="770">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -155,6 +192,7 @@
       <find>end2</find>
       <find>generate</find>
       <find>subscribe</find>
+      <find>Mono&lt;Void&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,7 +228,6 @@
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_6.java" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/action/TestController.java" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/FluxTest.java" />
-        <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/util/SampleSubscriber.java" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_8.java" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_3.java" />
@@ -199,6 +236,11 @@
         <option value="$PROJECT_DIR$/git.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker.txt" />
+        <option value="$PROJECT_DIR$/txt/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" />
+        <option value="$PROJECT_DIR$/txt/docker/Dockerfile-Eureka" />
+        <option value="$PROJECT_DIR$/txt/docker/Dockerfile-Config" />
+        <option value="$PROJECT_DIR$/txt/docker/docker-compose-base.yml" />
       </list>
     </option>
   </component>
@@ -235,10 +277,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1543" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1938" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -260,64 +302,25 @@
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="txt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="txt" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="publisher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.reactivestreams:reactive-streams:1.0.2" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.reactivestreams:reactive-streams:1.0.2" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactive-streams-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.reactivestreams:reactive-streams:1.0.2" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactive-streams-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactivestreams" type="462c0819:PsiDirectoryNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="txt" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +337,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555588900053" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555663450583" />
     <property name="last_opened_file_path" value="F:/sinotnProject/cupl-face" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,6 +345,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SpringCloudProject\com-cloud\txt\docker" />
+      <recent name="F:\SpringCloudProject\com-cloud\txt\docker\jar" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -561,8 +570,18 @@
       <workItem from="1555289398866" duration="395000" />
       <workItem from="1555338244478" duration="2130000" />
       <workItem from="1555553284636" duration="2919000" />
-      <workItem from="1555588599360" duration="268000" />
+      <workItem from="1555588599360" duration="1601000" />
+      <workItem from="1555637017350" duration="1499000" />
+      <workItem from="1555656159355" duration="2847000" />
     </task>
+    <task id="LOCAL-00001" summary="docker更新">
+      <created>1555588918203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555588918203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -598,13 +617,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40134000" />
+    <option name="totallyTimeSpent" value="45813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65401304" visible="true" weight="0.23177083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65401304" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" sideWeight="0.345987" side_tool="true" weight="0.22921109" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -627,7 +646,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.27765727" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.17136659" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.2505423" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -641,47 +660,13 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65401304" visible="true" weight="0.22921109" />
-      <window_info id="Structure" order="1" sideWeight="0.345987" side_tool="true" visible="true" weight="0.22921109" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45119306" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Sequence" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.27765727" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.2505423" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docker更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,51 +700,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/CartEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Java/jdk8/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="998" column="22" selection-start-line="998" selection-start-column="22" selection-end-line="998" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/lambda/LambdaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -909,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/http/ReactiveHttpOutputMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
@@ -960,29 +890,6 @@
           <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/reactor/core/publisher/Mono.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22616">
-          <caret line="1110" column="33" selection-start-line="1110" selection-start-column="33" selection-end-line="1110" selection-end-column="33" />
-          <folding>
-            <element signature="e#7085#7086#0" expanded="true" />
-            <element signature="e#7140#7141#0" expanded="true" />
-            <element signature="e#8217#8218#0" expanded="true" />
-            <element signature="e#8269#8270#0" expanded="true" />
-            <element signature="e#9198#9199#0" expanded="true" />
-            <element signature="e#9232#9233#0" expanded="true" />
-            <element signature="e#9613#9614#0" expanded="true" />
-            <element signature="e#9661#9662#0" expanded="true" />
-            <element signature="e#10857#10858#0" expanded="true" />
-            <element signature="e#10905#10906#0" expanded="true" />
-            <element signature="e#18428#18429#0" expanded="true" />
-            <element signature="e#18482#18483#0" expanded="true" />
-            <element signature="e#20973#20974#0" expanded="true" />
-            <element signature="e#21022#21023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1093,21 +1000,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/git.txt" />
     <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_8.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
@@ -1146,10 +1039,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker.txt">
+    <entry file="file://$PROJECT_DIR$/docker.txt" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk8/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="20988">
+          <caret line="1013" column="7" lean-forward="true" selection-start-line="1013" selection-start-column="7" selection-end-line="1013" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE-sources.jar!/reactor/core/publisher/Mono.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83798">
+          <caret line="3955" column="27" selection-start-line="3955" selection-start-column="17" selection-end-line="3955" selection-end-column="27" />
+          <folding>
+            <element signature="e#7085#7086#0" expanded="true" />
+            <element signature="e#7140#7141#0" expanded="true" />
+            <element signature="e#8217#8218#0" expanded="true" />
+            <element signature="e#8269#8270#0" expanded="true" />
+            <element signature="e#9198#9199#0" expanded="true" />
+            <element signature="e#9232#9233#0" expanded="true" />
+            <element signature="e#9613#9614#0" expanded="true" />
+            <element signature="e#9661#9662#0" expanded="true" />
+            <element signature="e#10857#10858#0" expanded="true" />
+            <element signature="e#10905#10906#0" expanded="true" />
+            <element signature="e#18428#18429#0" expanded="true" />
+            <element signature="e#18482#18483#0" expanded="true" />
+            <element signature="e#20973#20974#0" expanded="true" />
+            <element signature="e#21022#21023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/consul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/docker/docker.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/docker/Dockerfile-Eureka">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/docker/docker-compose-base.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/docker/Dockerfile-Config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>

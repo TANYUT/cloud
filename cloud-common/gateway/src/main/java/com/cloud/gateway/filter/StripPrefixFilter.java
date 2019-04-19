@@ -69,7 +69,6 @@ public class StripPrefixFilter implements GlobalFilter, Ordered {
                             json.put("status", res.getStatusCode().value());
                             json.put("msg", res.getStatusCode().getReasonPhrase());
                             json.put("body", CodeEnum.resolve(res.getStatusCode().value()));
-                            Mono<JSONObject> mono = Mono.just(json);
                             Mono<Void> mono1 = Mono.when(i -> {
                                 json.put("status", res.getStatusCode().value());
                                 json.put("msg", res.getStatusCode().getReasonPhrase());
@@ -77,7 +76,7 @@ public class StripPrefixFilter implements GlobalFilter, Ordered {
                                 return;
                             });
 //                            Mono.just(json).and();
-                            return Mono.error(new Throwable(""));
+                            return mono1;
                         }
                         return res.writeWith(body);
                     }
