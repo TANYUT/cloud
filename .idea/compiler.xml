@@ -8,26 +8,55 @@
         <outputRelativeToContentRoot value="true" />
         <module name="auth" />
         <module name="com" />
+        <module name="com-log" />
         <module name="config" />
-        <module name="demo" />
-        <module name="dome-gateway" />
-        <module name="eureka" />
+        <module name="config-client" />
+        <module name="config-web" />
+        <module name="demo-server-a" />
+        <module name="demo-server-b" />
+        <module name="demo-web-flux" />
         <module name="gateway" />
         <module name="generator" />
-        <module name="web-flux" />
+        <module name="spring-config" />
+        <module name="spring-eureka" />
+        <module name="upms" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-config" target="1.8" />
+      <module name="com-swagger" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="dome-gateway" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="nacos" target="1.8" />
+      <module name="nacos-console" target="1.8" />
+      <module name="netty" target="1.8" />
+      <module name="web-flux" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth" options="-parameters" />
       <module name="com" options="-parameters" />
+      <module name="com-config" options="-parameters" />
+      <module name="com-log" options="-parameters" />
+      <module name="com-swagger" options="-parameters" />
       <module name="config" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-web" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="demo-server-a" options="-parameters" />
+      <module name="demo-server-b" options="-parameters" />
+      <module name="demo-web-flux" options="-parameters" />
       <module name="dome-gateway" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="generator" options="-parameters" />
+      <module name="nacos" options="-parameters" />
+      <module name="netty" options="-parameters" />
+      <module name="spring-config" options="-parameters" />
+      <module name="spring-eureka" options="-parameters" />
+      <module name="upms" options="-parameters" />
       <module name="web-flux" options="-parameters" />
     </option>
   </component>

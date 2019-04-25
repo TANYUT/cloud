@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cloud</groupId>
     <artifactId>com-cloud</artifactId>
-    <version>1.0.0</version>
+    <version>${com-cloud.version}</version>
     <description>Spring Cloud</description>
     <packaging>pom</packaging>
     <modules>
@@ -15,23 +15,30 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.3.RELEASE</version>
+        <version>2.1.4.RELEASE</version>
         <relativePath/>
     </parent>
 
 
     <properties>
         <!-- 项目版本管理 -->
-        <com-cloud.version>1.0.0</com-cloud.version>
+        <com-cloud.version>1.0-SNAPSHOT</com-cloud.version>
         <!--java版本-->
         <maven.compile.source>1.8</maven.compile.source>
         <maven.compile.target>1.8</maven.compile.target>
         <java.version>1.8</java.version>
         <!-- Spring Cloud Boot Version -->
-        <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
+        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <spring-platform.version>Cairo-SR5</spring-platform.version>
         <spring-boot-admin.version>2.1.3</spring-boot-admin.version>
+        <!--  swagger2  -->
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <swagger-bootstrap-ui.version>1.9.3</swagger-bootstrap-ui.version>
+        <swagger-spring-boot-starter.version>1.8.0.RELEASE</swagger-spring-boot-starter.version>
+        <!--nacos 客户端-->
+        <nacos-config.version>0.2.1.RELEASE</nacos-config.version>
+        <nacos-discovery.version>0.2.1</nacos-discovery.version>
         <!-- Tools -->
         <security.oauth.version>2.3.3.RELEASE</security.oauth.version>
         <lombok.version>1.16.20</lombok.version>
@@ -40,9 +47,11 @@
         <ttl.version>2.2.0</ttl.version>
         <fastjson.version>1.2.56</fastjson.version>
         <javadoc.version>3.0.0</javadoc.version>
+
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
-        <swagger2.version>2.8.0</swagger2.version>
+
+
         <kaptcha.version>0.0.9</kaptcha.version>
         <ttl.version>2.2.0</ttl.version>
         <sharding-jdbc-core.version>2.0.1</sharding-jdbc-core.version>
@@ -69,11 +78,7 @@
     <!--公共依赖-->
     <dependencies>
 
-        <!--eureka 客户端-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
+
         <!--配置文件处理器-->
         <!--<dependency>-->
         <!--<groupId>org.springframework.boot</groupId>-->
@@ -82,34 +87,19 @@
         <!--</dependency>-->
         <!-- 服务加解密工具 -->
 
-        <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>${jasypt.version}</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>com.github.ulisesbocchio</groupId>-->
+        <!--<artifactId>jasypt-spring-boot-starter</artifactId>-->
+        <!--<version>${jasypt.version}</version>-->
+        <!--</dependency>-->
 
-        <!--监控-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!--监控客户端-->
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
-            <version>${spring-boot-admin.version}</version>
-        </dependency>
-        <!--断路器依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
+
         <!--Lombok-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.projectlombok</groupId>-->
+        <!--<artifactId>lombok</artifactId>-->
+        <!--<version>${lombok.version}</version>-->
+        <!--</dependency>-->
 
 
     </dependencies>
@@ -137,15 +127,21 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--jackson模块-->
             <dependency>
-                <groupId>com.fasterxml.jackson.module</groupId>
-                <artifactId>jackson-modules-java8</artifactId>
-                <version>${jackson.modules}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>0.2.1.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!--jackson模块-->
+            <!--<dependency>-->
+            <!--<groupId>com.fasterxml.jackson.module</groupId>-->
+            <!--<artifactId>jackson-modules-java8</artifactId>-->
+            <!--<version>${jackson.modules}</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>import</scope>-->
+            <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
     <!--<build>-->
@@ -207,8 +203,18 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--docker 插件-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
+
 
     <repositories>
         <!--使用阿里云镜像-->

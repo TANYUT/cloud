@@ -5,80 +5,34 @@
     <parent>
         <artifactId>cloud-common</artifactId>
         <groupId>com.cloud</groupId>
-        <version>1.0.0</version>
+        <version>1.0-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cloud</groupId>
     <artifactId>gateway</artifactId>
-    <version>1.0.0</version>
-    <name>gateway</name>
+    <name>${project.artifactId}</name>
     <description>Gateway 网关服务</description>
     <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <!--gateway  redis 限流-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <!--nacos 配置中心客户端 -->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+            <!--<version>${nacos-config.version}</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>4.5.1</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-web</artifactId>-->
-        <!--<exclusions>-->
-        <!--&lt;!&ndash;排除tomcat依赖&ndash;&gt;-->
-        <!--<exclusion>-->
-        <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--</exclusion>-->
-        <!--</exclusions>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;undertow容器&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-undertow</artifactId>-->
-        <!--</dependency>-->
-        <!---->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-config-client</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-webflux</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-config-client</artifactId>-->
-        <!--<version>2.1.1.RELEASE</version>-->
 
-        <!--</dependency>-->
-
-
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.security</groupId>-->
-        <!--<artifactId>spring-security-config</artifactId>-->
-        <!--<version>5.1.4.RELEASE</version>-->
-        <!--<scope>compile</scope>-->
-        <!--</dependency>-->
     </dependencies>
     <build>
         <plugins>

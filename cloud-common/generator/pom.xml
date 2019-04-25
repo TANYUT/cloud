@@ -6,13 +6,15 @@
     <parent>
         <artifactId>cloud-common</artifactId>
         <groupId>com.cloud</groupId>
-        <version>1.0.0</version>
+        <version>1.0-SNAPSHOT</version>
         <relativePath>pom.xml</relativePath>
     </parent>
-
-    <description>Generator 代码生成器 </description>
+    <groupId>com.cloud</groupId>
+    <name>${project.artifactId}</name>
     <artifactId>generator</artifactId>
+    <description>Generator 代码生成器</description>
     <dependencies>
+        <!--这里MYSQL 只能用5.1.X-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -24,11 +26,7 @@
             <groupId>org.apache.velocity</groupId>
             <version>${velocity.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>

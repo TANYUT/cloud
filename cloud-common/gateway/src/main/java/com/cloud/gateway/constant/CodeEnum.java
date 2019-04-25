@@ -1,6 +1,5 @@
 package com.cloud.gateway.constant;
 
-import io.micrometer.core.lang.Nullable;
 
 /**
  * <p>
@@ -128,7 +127,6 @@ public enum CodeEnum {
      * @return the corresponding {@code HttpStatus}, or {@code null} if not found
      * @since 5.0
      */
-    @Nullable
     public static CodeEnum resolve(int statusCode) {
         for (CodeEnum status : values()) {
             if (status.code == statusCode) {

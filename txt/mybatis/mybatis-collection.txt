@@ -1,0 +1,50 @@
+<resultMap id="traiPlanVOMap" type="com.sinotn.gxpta.train.api.vo.TrainPlanWithOrgVO">
+        <id column="ID" jdbcType="CHAR" property="id"/>
+        <id column="TRAIN_TYPE" jdbcType="VARCHAR" property="trainType"/>
+        <result column="PLAN_NAME" jdbcType="VARCHAR" property="planName"/>
+        <result column="TRAIN_TYPE_COUNT" jdbcType="TINYINT" property="trainTypeCount"/>
+        <result column="ROUND_COUNT" jdbcType="SMALLINT" property="roundCount"/>
+        <result column="ORG_COUNT" jdbcType="SMALLINT" property="orgCount"/>
+        <result column="TRAINEE_COUNT" jdbcType="INTEGER" property="traineeCount"/>
+        <result column="BEGIN_TIME" jdbcType="TIMESTAMP" property="beginTime"/>
+        <result column="END_TIME" jdbcType="TIMESTAMP" property="endTime"/>
+        <result column="DEL_FLAG" jdbcType="TINYINT" property="delFlag"/>
+        <collection property="orgList" ofType="com.sinotn.gxpta.train.api.vo.TrainOrganizationVO">
+            <id column="ORGID" jdbcType="VARCHAR" property="id"/>
+            <result column="ADMINISTRATIVE_ID" jdbcType="VARCHAR" property="administrativeId"/>
+            <result column="ADMINISTRATIVE_NAME" jdbcType="VARCHAR" property="administrativeName"/>
+            <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName"/>
+            <result column="LINKER" jdbcType="VARCHAR" property="linker"/>
+            <result column="LINKER_PHONE" jdbcType="VARCHAR" property="linkerPhone"/>
+            <result column="LNG" jdbcType="DOUBLE" property="lng"/>
+            <result column="LAT" jdbcType="DOUBLE" property="lat"/>
+            <result column="ADDRESS" jdbcType="VARCHAR" property="address"/>
+        </collection>
+    </resultMap>
+    <sql id="trainPlanVOColumn">
+        p.ID, p.TRAIN_TYPE, p.PLAN_NAME,
+        p.TRAIN_TYPE_COUNT,
+        p.ROUND_COUNT,
+        p.ORG_COUNT,
+        p.BEGIN_TIME,
+        p.END_TIME,
+        p.DEL_FLAG,
+        org.id AS orgid,
+        org.ADMINISTRATIVE_ID,
+        org.ADMINISTRATIVE_NAME,
+        org.ORG_NAME,
+        org.LINKER,
+        org.LINKER_PHONE,
+        org.LNG,
+        org.LAT,
+        org.ADDRESS
+      </sql>
+      <select id="selectTrainPlanWithOrgs" resultMap="traiPlanVOMap">
+              SELECT
+              <include refid="trainPlanVOColumn"/>
+              from tr_train_plan p
+              LEFT JOIN tr_plan_org_relation por ON p.ID=por.PLAN_ID
+              LEFT JOIN tr_train_organization org ON org.id=por.ORG_ID
+              WHERE p.DEL_FLAG=0 AND p.END_TIME > NOW()
+              ORDER BY p.BEGIN_TIME desc
+          </select>

@@ -1,12 +1,10 @@
 package com.cloud.gateway;
 
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.gateway.filter.factory.rewrite.ModifyResponseBodyGatewayFilterFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.core.annotation.Order;
-import org.springframework.http.codec.ServerCodecConfigurer;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 /**
  * <p>
@@ -18,18 +16,14 @@ import org.springframework.http.codec.ServerCodecConfigurer;
  * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
  * @Date 2019/3/30 17:28
  */
-@Slf4j
+@RefreshScope//刷新配置
+@EnableDiscoveryClient
 @SpringBootApplication
 public class GatewayApp {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApp.class, args);
     }
 
-    @Bean
-    public ModifyResponseBodyGatewayFilterFactory ResponseBodyGatewayFilter(
-            ServerCodecConfigurer codecConfigurer) {
-        return new ModifyResponseBodyGatewayFilterFactory(codecConfigurer);
-    }
 //    @Bean
 //    @Order(-1)
 //    public GlobalFilter a() {
