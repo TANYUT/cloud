@@ -19,9 +19,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @RefreshScope//刷新配置
 @EnableDiscoveryClient
 @SpringCloudApplication
-public class DemoApp   {
+public class DemoServerA_App {
     public static void main(String[] args) {
-        SpringApplication.run(DemoApp.class, args);
+        SpringApplication.run(DemoServerA_App.class, args);
     }
 
 }

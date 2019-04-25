@@ -39,6 +39,34 @@
         <!--nacos 客户端-->
         <nacos-config.version>0.2.1.RELEASE</nacos-config.version>
         <nacos-discovery.version>0.2.1</nacos-discovery.version>
+        <!--dao层-->
+        <mybatis-plus.version>3.1.0</mybatis-plus.version>
+        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+        <mybatis-generator.version>1.3.6</mybatis-generator.version>
+        <mysql.version>5.1.34</mysql.version>
+        <!--tool工具-->
+        <jackson.modules>2.9.6</jackson.modules>
+        <hutool.version>4.5.1</hutool.version>
+        <poi.version>3.17</poi.version>
+
+
+        <kaptcha.version>0.0.9</kaptcha.version>
+        <ttl.version>2.2.0</ttl.version>
+        <sharding-jdbc-core.version>2.0.1</sharding-jdbc-core.version>
+        <velocity-engine-core.version>2.0</velocity-engine-core.version>
+
+
+        <cloud-admin-server.version>2.1.3</cloud-admin-server.version>
+        <commons-io.version>2.6</commons-io.version>
+        <jasypt.version>2.1.1</jasypt.version>
+        <velocity.version>1.7</velocity.version>
+        <fastdfs.version>1.26.5</fastdfs.version>
+
+
+        <xerces.version>2.11.0</xerces.version>
+        <druid.version>1.1.12</druid.version>
+
+
         <!-- Tools -->
         <security.oauth.version>2.3.3.RELEASE</security.oauth.version>
         <lombok.version>1.16.20</lombok.version>
@@ -48,37 +76,15 @@
         <fastjson.version>1.2.56</fastjson.version>
         <javadoc.version>3.0.0</javadoc.version>
 
-        <mybatis-plus.version>3.1.0</mybatis-plus.version>
-        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
-
-
-        <kaptcha.version>0.0.9</kaptcha.version>
-        <ttl.version>2.2.0</ttl.version>
-        <sharding-jdbc-core.version>2.0.1</sharding-jdbc-core.version>
-        <velocity-engine-core.version>2.0</velocity-engine-core.version>
-
-        <hutool.version>4.5.1</hutool.version>
-        <cloud-admin-server.version>2.1.3</cloud-admin-server.version>
-        <commons-io.version>2.6</commons-io.version>
-        <jasypt.version>2.1.1</jasypt.version>
-        <velocity.version>1.7</velocity.version>
-        <fastdfs.version>1.26.5</fastdfs.version>
-        <mybatis-generator.version>1.3.6</mybatis-generator.version>
-        <poi.version>3.17</poi.version>
-        <xerces.version>2.11.0</xerces.version>
-        <druid.version>1.1.12</druid.version>
-        <jackson.modules>2.9.6</jackson.modules>
-        <!--5.7 mySQL -->
-        <mysql.version>5.1.34</mysql.version>
-        <!-- <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>-->
     </properties>
 
     <!--公共依赖-->
     <dependencies>
-
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
         <!--配置文件处理器-->
         <!--<dependency>-->
         <!--<groupId>org.springframework.boot</groupId>-->
@@ -86,22 +92,11 @@
         <!--<optional>true</optional>-->
         <!--</dependency>-->
         <!-- 服务加解密工具 -->
-
         <!--<dependency>-->
         <!--<groupId>com.github.ulisesbocchio</groupId>-->
         <!--<artifactId>jasypt-spring-boot-starter</artifactId>-->
         <!--<version>${jasypt.version}</version>-->
         <!--</dependency>-->
-
-
-        <!--Lombok-->
-        <!--<dependency>-->
-        <!--<groupId>org.projectlombok</groupId>-->
-        <!--<artifactId>lombok</artifactId>-->
-        <!--<version>${lombok.version}</version>-->
-        <!--</dependency>-->
-
-
     </dependencies>
     <!--依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号-->
     <dependencyManagement>

@@ -2,139 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79b624a7-47e6-43b7-aa52-f529d3a78720" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com/src/main/java/com/cloud/com/constant/FinalConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com/src/main/java/com/cloud/com/util/ToBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/java/com/cloud/config/ConfigApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/java/com/cloud/config/SptingConfigApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/auth-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/auth-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/demo-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/demo-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-bigdata-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/exam-bigdata-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-checkin-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/exam-checkin-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-codegen-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/exam-codegen-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-node-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/exam-node-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/exam-platform-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/exam-platform-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/gateway-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/gateway-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/config/upms-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/spring-config/src/main/resources/config/upms-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/config/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/consul/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/consul/src/main/java/com/cloud/consul/ConsulApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/consul/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/demo/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/src/main/java/com/cloud/eureka/EurekaApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/eureka/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/GatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/GatewayApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/WebSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/filter/AdaptCachedBodyGlobalFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/filter/GlobalFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/filter/StripPrefixFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/filter/WeightCalculatorWebFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/resolver/KeyResolverFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/AbstractErrorWebExceptionHandlerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/ErrorHandlerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/ErrorWeb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/ExceptionConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/JsonExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/constant/CodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/constant/CodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/constant/HttpStatusEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/AuthorizationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/GatewayFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/GatewayFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/ServerHttpResponseBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/reqfilter/StripPrefixFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/BodyHandlerFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/BodyHandlerGlobalFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/BodyHandlerServerHttpResponseDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/NettyRoutingFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/NettyWriteResponseImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/resfilter/WrapperResponseGlobalFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/serverfilter/ResBodyConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/serverfilter/ResponseAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/serverfilter/ServerHttpResBodyFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/config-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/config-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/web/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/web/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/config/config-web/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/config/config-web/src/main/resources/META-INF/spring.factories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-common/upms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/upms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/src/main/java/com/cloud/demo/DemoApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/src/main/java/com/cloud/demo/action/ErrorWeb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/src/main/java/com/cloud/demo/action/GetApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/src/main/java/com/cloud/demo/cinfig/ResBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/demo/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/src/main/java/com/cloud/demo/DemoGatewayApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/src/main/java/com/cloud/demo/action/GatewayDomeApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/dome-gateway/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/WebFluxApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/action/ApiAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/action/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/config/WebFluxConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/MonoFlux_8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/util/MyEventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/demo/util/SampleSubscriber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/CartEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/java/com/cloud/webflux/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/FluxDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/FluxTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/src/test/com/test/lambda/LambdaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/META-INF/web-flux.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/WebFluxApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/action/ApiAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/action/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_8$Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/MonoFlux_8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/util/MyEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/demo/util/SampleSubscriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/entity/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/entity/CartEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/entity/Invoice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/classes/com/cloud/webflux/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/FluxDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/FluxTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/lambda/LambdaTest$1Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/lambda/LambdaTest$1StudentIdComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/target/test-classes/com/test/lambda/LambdaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-modules/web-flux/web-flux.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/DemoServerA_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/action/ErrorWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/action/ErrorWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-modules/demo-server-b/src/main/java/com/cloud/demo/DemoGatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-modules/demo-server-b/src/main/java/com/cloud/demo/DemoServerB_App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/docker/docker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/docker/docker.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/git/git.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-common/eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-modules/dome-gateway/target/" />
@@ -191,7 +69,98 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/upms/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/config/config-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-336">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/config/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="905">
+              <caret line="96" column="50" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/resources/META-INF/spring.factories">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/web/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-468">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/action/ErrorWeb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -205,8 +174,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hello</find>
-      <find>Runnable</find>
       <find>fromStream</find>
       <find>webflux</find>
       <find>combinelatest</find>
@@ -235,6 +202,8 @@
       <find>api-docs</find>
       <find>nacos</find>
       <find>demo</find>
+      <find>web</find>
+      <find>mybatis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -243,9 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud-common/config/config-swagger-web/src/main/java/com/cloud/web/BaseController.java" />
-        <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/SwaggerHeaderFilter.java" />
-        <option value="$PROJECT_DIR$/cloud-common/nacos/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/filter/SwaggerProvider.java" />
         <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/config/weberror/JsonExceptionHandler.java" />
         <option value="$PROJECT_DIR$/cloud-common/gateway/src/main/java/com/cloud/gateway/constant/CodeEnum.java" />
@@ -273,7 +239,6 @@
         <option value="$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/scope/DataScopeInterceptor.java" />
         <option value="$PROJECT_DIR$/cloud-modules/demo/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/spring-config/src/main/java/com/cloud/config/ConfigApp.java" />
-        <option value="$PROJECT_DIR$/cloud-common/config/config-web/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/cloud-modules/demo-server-b/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/cloud-common/config/pom.xml" />
@@ -282,18 +247,22 @@
         <option value="$PROJECT_DIR$/cloud-common/auth/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/config/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/generator/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/spring-config/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-common/upms/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-modules/demo-web-flux/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-modules/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-modules/demo-web-flux/src/main/java/com/cloud/webflux/netty/demo/netty/Server.java" />
+        <option value="$PROJECT_DIR$/cloud-common/upms/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/config/config-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/config/config-web/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/web/BaseController.java" />
+        <option value="$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/action/ErrorWeb.java" />
       </list>
     </option>
   </component>
@@ -306,26 +275,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-server-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-server-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-server-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-server-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -343,8 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,28 +309,39 @@
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -390,163 +349,36 @@
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="com-log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="com-log" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="com-log" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="config-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="config-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="config-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="upms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="upms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-modules" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server-b" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,13 +389,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556185682016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556186118026" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-common/config/config-swagger-web/src/main/java/com/cloud" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringBlade" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15284973" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring" />
@@ -602,75 +434,7 @@
     </option>
     <option name="contentProportion" value="0.17965367" />
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApp">
-    <configuration name="MonoFlux_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.webflux.demo.MonoFlux_1" />
-      <module name="web-flux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.webflux.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoFlux_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.webflux.demo.MonoFlux_3" />
-      <module name="web-flux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.webflux.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoFlux_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.webflux.demo.MonoFlux_7" />
-      <module name="web-flux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.webflux.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoFlux_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.webflux.demo.MonoFlux_8" />
-      <module name="web-flux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.webflux.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FluxTest.tes_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web-flux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.FluxTest" />
-      <option name="METHOD_NAME" value="tes_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="AuthApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.auth.AuthApp" />
@@ -680,29 +444,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.demo.DemoApp" />
-      <option name="VM_PARAMETERS" value="-Xmx128m" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="DemoServerA_App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-server-a" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.demo.DemoServerA_App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoGatewayApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="dome-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.demo.DemoGatewayApp" />
-      <option name="VM_PARAMETERS" value="-Xmx128m" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="DemoServerB_App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-server-b" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.demo.DemoServerB_App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="EurekaApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eureka" />
+      <module name="spring-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.eureka.EurekaApp" />
-      <option name="VM_PARAMETERS" value="-Xmx128m" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -712,13 +470,6 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.gateway.GatewayApp" />
       <option name="VM_PARAMETERS" value="-Xmx128m" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NettyApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="netty" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.netty.NettyApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -738,7 +489,7 @@
       </method>
     </configuration>
     <configuration name="WebFluxApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="web-flux" />
+      <module name="demo-web-flux" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.webflux.WebFluxApp" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -746,29 +497,14 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.AuthApp" />
-      <item itemvalue="Spring Boot.DemoApp" />
-      <item itemvalue="Spring Boot.DemoGatewayApp" />
-      <item itemvalue="Spring Boot.EurekaApp" />
       <item itemvalue="Spring Boot.GatewayApp" />
-      <item itemvalue="Spring Boot.WebFluxApp" />
-      <item itemvalue="Application.MonoFlux_8" />
-      <item itemvalue="Application.MonoFlux_1" />
-      <item itemvalue="Application.MonoFlux_3" />
-      <item itemvalue="Application.MonoFlux_7" />
-      <item itemvalue="JUnit.FluxTest.tes_1" />
-      <item itemvalue="Spring Boot.NettyApp" />
       <item itemvalue="Spring Boot.UpmsApp" />
       <item itemvalue="Spring Boot.SptingConfigApp" />
+      <item itemvalue="Spring Boot.WebFluxApp" />
+      <item itemvalue="Spring Boot.DemoServerA_App" />
+      <item itemvalue="Spring Boot.EurekaApp" />
+      <item itemvalue="Spring Boot.DemoServerB_App" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.FluxTest.tes_1" />
-        <item itemvalue="Application.MonoFlux_7" />
-        <item itemvalue="Application.MonoFlux_3" />
-        <item itemvalue="Application.MonoFlux_1" />
-        <item itemvalue="Application.MonoFlux_8" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
@@ -813,7 +549,8 @@
       <workItem from="1556093932058" duration="703000" />
       <workItem from="1556098896838" duration="8441000" />
       <workItem from="1556153840471" duration="803000" />
-      <workItem from="1556162402585" duration="19597000" />
+      <workItem from="1556162402585" duration="20069000" />
+      <workItem from="1556186159985" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="docker更新">
       <created>1555588918203</created>
@@ -858,10 +595,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112633000" />
+    <option name="totallyTimeSpent" value="114107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86725664" visible="true" weight="0.31023455" />
       <window_info id="Designer" order="1" />
@@ -886,12 +624,12 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4989339" visible="true" weight="0.08785249" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4989339" visible="true" weight="0.12581345" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49840087" weight="0.15075922" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.33742005" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32569295" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
@@ -944,61 +682,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloud-common/com/com-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="50" column="21" selection-start-line="23" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/FilterIgnorePropertiesConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/RestTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/RedisTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/JacksonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/config/scope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/scope/DataScope.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1016,13 +699,7 @@
     <entry file="file://$PROJECT_DIR$/cloud-common/upms/src/main/java/com/cloud/upms/controller/UserApi.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo/pom.xml" />
     <entry file="file://$PROJECT_DIR$/cloud-common/upms/src/main/java/com/cloud/upms/UpmsApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1050,16 +727,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/dome-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/error.log" />
+    <entry file="file://$PROJECT_DIR$/cloud-modules/dome-gateway/pom.xml" />
     <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1095,20 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.1.4.RELEASE/spring-boot-starter-parent-2.1.4.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -1120,13 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="43" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1144,55 +792,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/upms/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-web-flux/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-modules/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/cloud-common/eureka/pom.xml" />
     <entry file="file://$PROJECT_DIR$/cloud-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1200,11 +801,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-common/netty/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/netty/pom.xml" />
     <entry file="file://$PROJECT_DIR$/cloud-modules/demo-web-flux/src/main/java/com/cloud/webflux/netty/demo/netty/AsyncServerHandler.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1246,10 +843,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/txt/git/git.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/auth/src/main/java/com/cloud/auth/service/impl/ClientDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/DemoServerA_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-b/src/main/java/com/cloud/demo/DemoServerB_App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-web-flux/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-b/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/upms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="905">
+          <caret line="96" column="50" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-common/config/config-web/src/main/java/com/cloud/web/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-modules/demo-server-a/src/main/java/com/cloud/demo/action/ErrorWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1305,7 +1010,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>auth</last-edited>
+          <last-edited>generator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

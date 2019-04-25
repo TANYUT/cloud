@@ -17,10 +17,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @Slf4j
 @SpringBootApplication
-public class DemoGatewayApp {
+public class DemoServerB_App {
     public static void main(String[] args) {
         log.info("========== DemoGatewayApp starting... ==========");
-        SpringApplication.run(DemoGatewayApp.class, args);
+        SpringApplication.run(DemoServerB_App.class, args);
         log.info("========== DemoGatewayApp started... ==========");
     }
 

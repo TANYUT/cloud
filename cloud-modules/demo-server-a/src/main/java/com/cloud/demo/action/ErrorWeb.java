@@ -38,7 +38,5 @@ public class ErrorWeb {
         map.put("code", "123");
         map.put("msg", e.getMessage());
         return map;
-
-//        return map;
     }
 }

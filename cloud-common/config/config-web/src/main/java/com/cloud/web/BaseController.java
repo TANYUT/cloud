@@ -7,8 +7,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -37,7 +37,7 @@ public class BaseController {
      * @Author: au .T
      * @Date: 2019/4/24 14:42
      */
-    @PostMapping("/template/download/{filename}")
+    @GetMapping("/template/download/{filename}")
     public ResponseEntity<InputStreamResource> downloadExcel(@PathVariable String filename) {
         try {
             Resource resource = new ClassPathResource("template/excel/" + filename);
