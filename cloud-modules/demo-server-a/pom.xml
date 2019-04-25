@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.cloud</groupId>
     <artifactId>demo-server-a</artifactId>
-    <version>1.0.0</version>
     <name>${project.artifactId}</name>
     <description>demo-server-a 测试用例</description>
 

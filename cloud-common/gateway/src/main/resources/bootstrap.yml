@@ -7,9 +7,9 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-#      config:
-#        file-extension: yml
-#        server-addr: 127.0.0.1:8848
+      config:
+        file-extension: yml
+        server-addr: 127.0.0.1:8848
   gateway:
     discovery:
       locator:
@@ -34,3 +34,26 @@ spring:
         predicates:
           - Path=/gatewaydemo/**
         filters:
+
+
+
+
+swagger:
+  enabled: true
+  title: demo-server-a TITLE
+  description: demo-server-a描述
+  version: version
+  license: 许可
+  license-url: 许可url
+  contact:
+    name: au.T
+    url: au_t@.com
+  docket:
+    demo_b:
+      title: demo-b测试title
+      description: demo-b测试
+      base-path: /api/**
+    demo_a:
+      title: demo_a测试title
+      description: demo_a测试
+      base-path: /api/**

@@ -1,12 +1,10 @@
 package com.cloud.demo.action;
 
-import com.cloud.demo.cinfig.ResBody;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,13 +23,12 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api")
-@Api(value = "GetApi", tags = "GetApi")
-public class GetApi {
-    @Autowired
-    HttpServletRequest request;
+@Api(value = "DemoSever_B_Api", tags = "DemoSever_B_Api")
+public class DemoSever_B_Api {
+
     @Value("${server.port}")
     String port;
-    @Value("${demo}")
+    @Value("${demo-server-b}")
     String demoTest;
 
     @GetMapping("/port")
@@ -46,30 +43,16 @@ public class GetApi {
         return demoTest;
     }
 
-    @GetMapping("/head")
-    public Object head() {
-        String head = request.getHeader("demoHeader");
-        Map<String, String> map = new HashMap<>();
-        map.put("head", head);
-        return map;
-//        return new ResBody<>(map);
-//        return "head info:" + head;
-
-    }
 
     @GetMapping("/index")
     public Object index() {
         Map<String, String> map = new HashMap<>();
-        for (int i = 0; i < 1000; i++) {
-            map.put("index" + i, "map" + 1);
-        }
-        map.put("index", "map");
+        map.put("index", "DemoSever_A_Api");
         return map;
     }
 
     @GetMapping("/error")
     public Object error() {
-
         if (true) {
             throw new RuntimeException("抛出RuntimeException异常");
         }

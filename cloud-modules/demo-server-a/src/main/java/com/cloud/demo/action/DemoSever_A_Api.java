@@ -4,7 +4,7 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -22,20 +22,26 @@ import java.util.Map;
  * @Date 2019/3/31 19:12
  */
 @RestController
-@ResponseBody
-@Api("GatewayDomeApi")
-public class GatewayDomeApi {
+@RequestMapping("/api")
+@Api(value = "DemoSever_A_Api", tags = "DemoSever_A_Api")
+public class DemoSever_A_Api {
     @Autowired
     HttpServletRequest request;
     @Value("${server.port}")
     String port;
+    @Value("${demo-server-a}")
+    String demoTest;
 
     @GetMapping("/port")
     public Object port() {
         Map<String, String> map = new HashMap<>();
         map.put("port", port);
         return map;
+    }
 
+    @GetMapping("/nacos/test")
+    public Object nacosTest() {
+        return demoTest;
     }
 
     @GetMapping("/head")
@@ -44,15 +50,20 @@ public class GatewayDomeApi {
         Map<String, String> map = new HashMap<>();
         map.put("head", head);
         return map;
-//        return "head info:" + head;
-
     }
 
     @GetMapping("/index")
     public Object index() {
-
         Map<String, String> map = new HashMap<>();
-        map.put("index", "map");
+        map.put("index", "DemoSever_A_Api");
         return map;
+    }
+
+    @GetMapping("/error")
+    public Object error() {
+        if (true) {
+            throw new RuntimeException("抛出RuntimeException异常");
+        }
+        return null;
     }
 }

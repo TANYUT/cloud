@@ -20,7 +20,18 @@ server:
 
 
 
-#swagger:
-#  description: demo演示-description
-#  enabled: true
-#  title: demo-title
+swagger:
+  enabled: true
+  title: demo-server-a TITLE
+  description: demo-server-a描述
+  version: version
+  license: 许可
+  license-url: 许可url
+  contact:
+    name: au.T
+    url: au_t@.com
+  docket:
+    demo_a:
+      title: demo-a测试title
+      description: demo-a测试
+      base-path: /api/**

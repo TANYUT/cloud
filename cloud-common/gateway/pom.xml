@@ -23,14 +23,27 @@
             <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
         <!--nacos 配置中心客户端 -->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-            <!--<version>${nacos-config.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos-config.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+
+        <!-- swagger -->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>${swagger-spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>${swagger-bootstrap-ui.version}</version>
         </dependency>
 
     </dependencies>

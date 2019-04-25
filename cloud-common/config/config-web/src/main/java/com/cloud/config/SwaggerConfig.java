@@ -1,6 +1,7 @@
 package com.cloud.config;
 
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
+import com.spring4all.swagger.EnableSwagger2Doc;
 import com.spring4all.swagger.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -20,13 +21,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 //@Profile({"dev", "test"})
 @Configuration
-@EnableSwagger2
 @EnableSwaggerBootstrapUI
 @EnableConfigurationProperties(SwaggerProperties.class)
+@EnableSwagger2Doc
 public class SwaggerConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("doc.html").addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
+
+
+
+
 }

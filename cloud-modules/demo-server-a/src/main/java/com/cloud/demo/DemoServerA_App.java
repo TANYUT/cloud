@@ -16,7 +16,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
  * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
  * @Date 2019/3/31 18:57
  */
-@RefreshScope//刷新配置
+//@RefreshScope//刷新配置
 @EnableDiscoveryClient
 @SpringCloudApplication
 public class DemoServerA_App {

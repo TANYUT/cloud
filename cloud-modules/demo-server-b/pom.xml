@@ -10,27 +10,28 @@
     </parent>
     <groupId>com.cloud</groupId>
     <artifactId>demo-server-b</artifactId>
-    <version>1.0.0</version>
     <name>${project.artifactId}</name>
-    <description>demo-server-a 测试用例</description>
+    <description>demo-server-b 测试用例</description>
 
 
     <dependencies>
+
         <!-- 集成Spring Boot Actuator -->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
-        <!--</dependency>-->
-        <!---->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
         <!--</dependency>-->
 
+
+        <!--&lt;!&ndash;nacos 配置中心客户端 &ndash;&gt;-->
         <!--<dependency>-->
-            <!--<groupId>com.spring4all</groupId>-->
-            <!--<artifactId>swagger-spring-boot-starter</artifactId>-->
-            <!--<version>1.8.0.RELEASE</version>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+        <!--<version>${nacos-config.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
         <!--</dependency>-->
 
         <dependency>
@@ -38,15 +39,14 @@
             <artifactId>config-web</artifactId>
             <version>${com-cloud.version}</version>
         </dependency>
-
         <!--nacos 服务注册 -->
         <dependency>
             <groupId>com.cloud</groupId>
             <artifactId>config-client</artifactId>
             <version>${com-cloud.version}</version>
         </dependency>
-    </dependencies>
 
+    </dependencies>
 
 
 </project>
