@@ -10,11 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <artifactId>cloud-common</artifactId>
+    <artifactId>client-server</artifactId>
     <packaging>pom</packaging>
-    <description>项目依赖中心</description>
+    <name>${project.artifactId}</name>
+    <description>客户端的启动</description>
     <modules>
-        <module>com-generator</module>
-        <module>com</module>
+        <module>upms-server</module>
+        <module>demo-server-a</module>
+        <module>demo-server-b</module>
+        <module>demo-web-flux</module>
     </modules>
+
 </project>

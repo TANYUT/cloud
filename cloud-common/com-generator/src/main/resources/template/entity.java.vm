@@ -1,0 +1,48 @@
+package ${package}.${moduleName}.entity;
+
+import com.baomidou.mybatisplus.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableLogic;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.util.Date;
+#if(${hasBigDecimal})
+import java.math.BigDecimal;
+#end
+
+/**
+ * <p>
+ * ${className}实体类
+ * </p>
+ * @Title: ${className}Controller.java
+ * @Package: ${package}.${moduleName}.entity;
+ *
+ * @Author <a href="mailto:${email}">${author}</a>
+ * @Date: ${ctime}
+ * @Version: ${version}
+ */
+@Data
+@TableName("${tableName}")
+@ApiModel(value = "${tableName}")
+public class ${className} extends Model<${className}>{
+	private static final long serialVersionUID = 1L;
+
+#foreach ($column in $columns)
+	/**
+ 	 * $column.comments
+ 	 */
+	#if($column.columnName == $pk.columnName)
+	@TableId
+	#end
+	#if($column.lowerAttrName=='delFlag')
+	@TableLogic
+	#end
+@ApiModelProperty(value = "$column.comments")
+private $column.attrType $column.lowerAttrName;
+#end
+
+}

@@ -1,8 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.cloud.config.SwaggerConfig,\
-  com.cloud.config.FdfsConnectionConfig,\
-  com.cloud.config.FilterIgnorePropertiesConfig,\
-  com.cloud.config.JacksonConfig,\
-  com.cloud.config.RestTemplateConfig,\
-  com.cloud.config.MybatisPlusConfig,\
-  com.cloud.config.RedisTemplateConfig,  

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>client-server</artifactId>
+        <groupId>com.cloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.cloud</groupId>
+    <artifactId>demo-server-b</artifactId>
+    <name>${project.artifactId}</name>
+    <description>demo-server-b 测试用例</description>
+
+
+    <dependencies>
+
+        <!-- 集成Spring Boot Actuator -->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+        <!--</dependency>-->
+
+
+        <dependency>
+            <groupId>com.cloud</groupId>
+            <artifactId>config-web</artifactId>
+            <version>${com-cloud.version}</version>
+        </dependency>
+        <!--nacos 服务注册 -->
+        <dependency>
+            <groupId>com.cloud</groupId>
+            <artifactId>config-client</artifactId>
+            <version>${com-cloud.version}</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

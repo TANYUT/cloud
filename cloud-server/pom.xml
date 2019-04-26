@@ -10,11 +10,17 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <artifactId>cloud-common</artifactId>
+    <artifactId>cloud-server</artifactId>
     <packaging>pom</packaging>
-    <description>项目依赖中心</description>
+    <description>spring cloud 的服务 gateway oauth等</description>
     <modules>
-        <module>com-generator</module>
-        <module>com</module>
+        <module>cloud-gateway</module>
+        <module>cloud-eureka</module>
+        <module>server-config</module>
+        <module>cloud-auth</module>
+        <!--<module>config</module>-->
+        <!--<module>gateway</module>-->
+        <!--&lt;!&ndash;<module>upms</module>&ndash;&gt;-->
+        <!--<module>com</module>-->
     </modules>
 </project>

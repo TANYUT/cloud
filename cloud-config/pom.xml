@@ -10,11 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <artifactId>cloud-common</artifactId>
+    <artifactId>cloud-config</artifactId>
     <packaging>pom</packaging>
-    <description>项目依赖中心</description>
+    <description>项目的配置中心</description>
     <modules>
-        <module>com-generator</module>
-        <module>com</module>
+        <module>config-web</module>
+        <module>config-client</module>
     </modules>
+
 </project>
