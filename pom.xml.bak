@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cloud</groupId>
+    <artifactId>com-cloud</artifactId>
+    <version>${com-cloud.version}</version>
+    <description>Spring Cloud</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>client-server</module>
+        <module>client-api</module>
+        <module>cloud-common</module>
+        <module>cloud-config</module>
+        <module>cloud-server</module>
+
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <properties>
+        <!-- 项目版本管理 -->
+        <com-cloud.version>1.0-SNAPSHOT</com-cloud.version>
+        <!--java版本-->
+        <maven.compile.source>1.8</maven.compile.source>
+        <maven.compile.target>1.8</maven.compile.target>
+        <java.version>1.8</java.version>
+        <!-- Spring Cloud Boot Version -->
+        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
+        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <spring-platform.version>Cairo-SR5</spring-platform.version>
+        <spring-boot-admin.version>2.1.3</spring-boot-admin.version>
+        <spring-cloud-alibaba.version>0.2.1.RELEASE</spring-cloud-alibaba.version>
+        <!--  swagger2  -->
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <swagger-bootstrap-ui.version>1.9.3</swagger-bootstrap-ui.version>
+        <swagger-spring-boot-starter.version>1.8.0.RELEASE</swagger-spring-boot-starter.version>
+        <!--nacos 客户端-->
+        <nacos-config.version>0.2.1.RELEASE</nacos-config.version>
+        <nacos-discovery.version>0.2.1</nacos-discovery.version>
+        <!--dao层-->
+        <mybatis-plus.version>3.1.0</mybatis-plus.version>
+        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+        <mybatis-generator.version>1.3.6</mybatis-generator.version>
+        <mysql.version>5.1.34</mysql.version>
+        <!--tool工具-->
+        <jackson.modules>2.9.6</jackson.modules>
+        <hutool.version>4.5.1</hutool.version>
+        <poi.version>3.17</poi.version>
+
+
+        <kaptcha.version>0.0.9</kaptcha.version>
+        <ttl.version>2.2.0</ttl.version>
+        <sharding-jdbc-core.version>2.0.1</sharding-jdbc-core.version>
+        <velocity-engine-core.version>2.0</velocity-engine-core.version>
+
+
+        <cloud-admin-server.version>2.1.3</cloud-admin-server.version>
+        <commons-io.version>2.6</commons-io.version>
+        <jasypt.version>2.1.1</jasypt.version>
+        <velocity.version>1.7</velocity.version>
+        <fastdfs.version>1.26.5</fastdfs.version>
+
+
+        <xerces.version>2.11.0</xerces.version>
+        <druid.version>1.1.12</druid.version>
+
+
+        <!-- Tools -->
+        <security.oauth.version>2.3.3.RELEASE</security.oauth.version>
+        <lombok.version>1.16.20</lombok.version>
+        <javax.version>7.0</javax.version>
+        <jjwt.version>0.9.0</jjwt.version>
+        <ttl.version>2.2.0</ttl.version>
+        <fastjson.version>1.2.56</fastjson.version>
+        <javadoc.version>3.0.0</javadoc.version>
+
+    </properties>
+
+    <!--公共依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <!--配置文件处理器-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-configuration-processor</artifactId>-->
+        <!--<optional>true</optional>-->
+        <!--</dependency>-->
+        <!-- 服务加解密工具 -->
+        <!--<dependency>-->
+        <!--<groupId>com.github.ulisesbocchio</groupId>-->
+        <!--<artifactId>jasypt-spring-boot-starter</artifactId>-->
+        <!--<version>${jasypt.version}</version>-->
+        <!--</dependency>-->
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${spring-platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--jackson模块-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-modules-java8</artifactId>
+                <version>${jackson.modules}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <finalName>${project.name}</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                    <configuration>
+                        <finalName>${project.build.finalName}</finalName>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!--<plugin>-->
+                <!--<groupId>com.spotify</groupId>-->
+                <!--<artifactId>docker-maven-plugin</artifactId>-->
+                <!--<version>0.4.12</version>-->
+                <!--<configuration>-->
+                <!--<imageName>${registry.url}/${project.name}:1.0.0</imageName>-->
+                <!--<dockerHost>${docker.url}</dockerHost>-->
+                <!--<dockerDirectory>${project.basedir}</dockerDirectory>-->
+                <!--<resources>-->
+                <!--<resource>-->
+                <!--<targetPath>/</targetPath>-->
+                <!--<directory>${project.build.directory}</directory>-->
+                <!--<include>${project.build.finalName}.jar</include>-->
+                <!--</resource>-->
+                <!--</resources>-->
+                <!--<serverId>docker-hub</serverId>-->
+                <!--<registryUrl>https://index.docker.io/v1/</registryUrl>-->
+                <!--</configuration>-->
+                <!--</plugin>-->
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <target>${maven.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--docker 插件-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <repositories>
+        <!--使用阿里云镜像-->
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <!--使用Spring镜像-->
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+
+
+</project>

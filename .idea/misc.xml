@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/cloud-modules/web-flux/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/console/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-common/netty/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,59 @@
+import fetch from '@/router/axios'
+
+/**
+ * 分页获取数据
+ * @param query
+ */
+export function get${className}sByPage(query) {
+  return fetch({
+    url: '/${moduleName}/${secondModuleName}/page',
+    method: 'get',
+    params: query
+  })
+}
+
+/**
+ * 添加对象
+ * @param obj
+ */
+export function add${className}(obj) {
+  return fetch({
+    url: '/${moduleName}/${secondModuleName}',
+    method: 'post',
+    data: obj
+  })
+}
+
+/**
+ * 通过ID获取对象
+ * @param id
+ */
+export function get${className}(id) {
+  return fetch({
+    url: '/${moduleName}/${secondModuleName}/' + id,
+    method: 'get'
+  })
+}
+
+/**
+ * 通过ID删除对象
+ * @param row
+ */
+export function del${className}(id) {
+  return fetch({
+    url: '/${moduleName}/${secondModuleName}/' + id,
+    method: 'delete'
+  })
+}
+
+/**
+ * 更新对象
+ * @param obj
+ */
+export function upd${className}(obj) {
+  return fetch({
+    url: '/${moduleName}/${secondModuleName}',
+    method: 'put',
+    data: obj
+  })
+}

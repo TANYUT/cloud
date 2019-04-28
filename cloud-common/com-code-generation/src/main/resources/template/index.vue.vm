@@ -1,0 +1,227 @@
+<template>
+  <div class="app-container calendar-list-container">
+    <div class="filter-container">
+      <el-input style="width:200px" class="filter-item" placeholder="模糊查询" v-model="listQuery.name" @keyup.enter.native="handleFilter">
+      </el-input>
+        <el-button class="filter-item" type="primary" v-waves icon="el-icon-search" @click="handleFilter">搜索</el-button>
+        <el-button v-if="${tablePrefix}${secondModuleName}_add" class="filter-item" style="margin-left: 10px;" type="primary" icon="el-icon-plus" @click="handleCreate">添加</el-button>
+      </el-form>
+    </div>
+    <el-table :key='tableKey' :data="listPage" v-loading.body="listPageLoading" element-loading-text="正在加载..." border fit highlight-current-row style="width: 99%">
+      <el-table-column label="序号" align="center" type="index" show-overflow-tooltip width="50">
+      </el-table-column>
+      #foreach($column in $columns)
+        #if($column.columnName == $pk.columnName)
+          <el-table-column align="center" label="${column.columnName}" width="65">
+            <template slot-scope="scope">
+              <span>{{scope.row.${column.lowerAttrName}}}</span>
+            </template>
+          </el-table-column>
+        #else
+          <el-table-column align="center" label="${column.comments}">
+            <template slot-scope="scope">
+              <span>{{scope.row.${column.lowerAttrName}}}</span>
+            </template>
+          </el-table-column>
+        #end
+      #end
+      <el-table-column fixed="right" align="center" label="操作" width="150">
+        <template slot-scope="scope">
+          <el-button v-if="${tablePrefix}${secondModuleName}_edit" size="small" type="success" @click="handleUpdate(scope.row)">编辑
+          </el-button>
+          <el-button v-if="${tablePrefix}${secondModuleName}_del" size="small" type="danger" @click="delete${className}(scope.row)">删除
+          </el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+    <div v-show="!listLoading" class="pagination-container">
+      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="listQuery.current" :page-sizes="[10,20,30,50]" :page-size="listQuery.size" layout="total, sizes, prev, pager, next, jumper" :total="listQuery.total"> </el-pagination>
+    </div>
+    <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
+      <el-form :model="form" :rules="rules" ref="form" label-width="100px">
+        #foreach($column in $columns)
+          #if($column.columnName != $pk.columnName)
+            <el-form-item label="${column.comments}" prop="${column.lowerAttrName}">
+              <el-input v-model="form.${column.lowerAttrName}" placeholder="请输入${column.comments}"></el-input>
+            </el-form-item>
+          #end
+        #end
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="cancel('form')">取 消</el-button>
+        <el-button v-if="dialogStatus=='create'" type="primary" @click="create${className}('form')">确 定</el-button>
+        <el-button v-else type="primary" @click="update${className}('form')">确 定</el-button>
+      </div>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+import {get${className}sByPage, add${className}, get${className}, del${className}, upd${className}} from 'src/main/resources/template/index.vue${moduleName}/${secondModuleName}';
+import { mapGetters } from 'vuex';
+import waves from '@/directive/waves/index.js' // 水波纹
+  export default {
+    name: '${secondModuleName}',
+    directives: {
+      waves
+    },
+    data() {
+      return {
+        form: {
+      #foreach($column in $columns)
+        #if($column.columnName != $pk.columnName)
+          ${column.lowerAttrName} : undefined
+          #if($velocityCount != $columns.size()),
+          #end
+        #end
+      #end
+    },
+      rules: {},
+      listPage: null,
+      listPageLoading: true,
+      listQuery: {
+        current: 1,
+        size: 10,
+        name: undefined,
+        total: null,
+      },
+      dialogFormVisible: false,
+      dialogStatus: '',
+      ${tablePrefix}${secondModuleName}_add: false,
+      ${tablePrefix}${secondModuleName}_del: false,
+      ${tablePrefix}${secondModuleName}_edit: false,
+      textMap: {
+        update: '编辑',
+        create: '创建'
+      },
+      tableKey: 0
+    }
+    },
+    created() {
+      this.getlistPage();
+      this.${tablePrefix}${secondModuleName}_add = this.permissions['${tablePrefix}${secondModuleName}_add']
+      this.${tablePrefix}${secondModuleName}_edit = this.permissions['${tablePrefix}${secondModuleName}_edit']
+      this.${tablePrefix}${secondModuleName}_del = this.permissions['${tablePrefix}${secondModuleName}_del']
+    },
+    computed: {
+      ...mapGetters([
+        'permissions'
+      ])
+    },
+    filters: {
+      statusFilter(status) {
+        const statusMap = {
+          0: '正常',
+          1: '锁定'
+        }
+        return statusMap[status]
+      }
+    },
+    methods: {
+      getlistPage() {
+        this.listLoading = true;
+        get${className}sByPage(this.listQuery).then(res => {
+          this.listPage = response.data.records;
+          this.listQuery.total = response.data.total;
+          this.listPageLoading = false;
+        })
+      },
+      handleFilter() {
+        this.listQuery.current = 1;
+        this.getlistPage();
+      },
+      handleSizeChange(val) {
+        this.listQuery.size = val;
+        this.getlistPage();
+      },
+      handleCurrentChange(val) {
+        this.listQuery.current = val;
+        this.getlistPage();
+      },
+      handleCreate() {
+        this.resetTemp();
+        this.dialogStatus = 'create';
+        this.dialogFormVisible = true;
+      },
+      handleUpdate(row) {
+        get${className}(row.id).then(res => {
+          this.form = response.data;
+          this.dialogFormVisible = true;
+          this.dialogStatus = 'update';
+        });
+      },
+      delete${className}(row) {
+        this.$confirm('此操作将永久删除数据, 是否继续?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          del${className}(row.id).then(() => {
+            this.$notify({
+              title: '成功',
+              message: '删除成功',
+              type: 'success',
+              duration: 2000
+            });
+            const index = this.list.indexOf(row);
+            this.list.splice(index, 1);
+          });
+        });
+      },
+      create${className}(formName) {
+        const set = this.$refs;
+        set[formName].validate(valid => {
+          if (valid) {
+            add${className}(this.form).then(res => {
+              this.dialogFormVisible = false;
+              this.getList();
+              this.$notify({
+                title: '成功',
+                message: '创建成功',
+                type: 'success',
+                duration: 2000
+              });
+            })
+          } else {
+            return false;
+          }
+        });
+      },
+      cancel(formName) {
+        this.dialogFormVisible = false;
+        const set = this.$refs;
+        set[formName].resetFields();
+      },
+      update${className}(formName) {
+        const set = this.$refs;
+        set[formName].validate(valid => {
+          if (valid) {
+            this.dialogFormVisible = false;
+            upd${className}(this.form).then(res => {
+              this.dialogFormVisible = false;
+              this.getList();
+              this.$notify({
+                title: '成功',
+                message: '更新成功',
+                type: 'success',
+                duration: 2000
+              });
+            });
+          } else {
+            return false;
+          }
+        });
+      },
+      resetTemp() {
+        this.form = {
+        #foreach($column in $columns)
+          #if($column.columnName != $pk.columnName)
+            ${column.lowerAttrName} : undefined#if($velocityCount != $columns.size()),
+          #end
+          #end
+        #end
+      };
+      }
+    }
+  }
+</script>

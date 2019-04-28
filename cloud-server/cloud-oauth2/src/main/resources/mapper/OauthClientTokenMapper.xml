@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.oauth2.mapper.OauthClientTokenMapper">
+
+    <resultMap id="oauthClientTokenMap" type="com.cloud.oauth2.entity.OauthClientToken">
+        <id property="authenticationId" column="authentication_id"/>
+        <result property="tokenId" column="token_id"/>
+        <result property="token" column="token"/>
+        <result property="userName" column="user_name"/>
+        <result property="clientId" column="client_id"/>
+    </resultMap>
+</mapper>

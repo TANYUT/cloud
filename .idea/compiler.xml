@@ -2,43 +2,56 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-auth" />
-        <module name="cloud-eureka" />
         <module name="cloud-gateway" />
-        <module name="com" />
-        <module name="com-generator" />
-        <module name="com-log" />
-        <module name="config-client" />
-        <module name="config-web" />
-        <module name="demo-server-a" />
-        <module name="demo-server-b" />
-        <module name="demo-web-flux" />
-        <module name="server-config" />
+        <module name="cloud-oauth2" />
+        <module name="cloud-upms" />
+        <module name="cloud-web-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auth" target="1.8" />
+      <module name="client-api" target="1.8" />
+      <module name="client-server" target="1.8" />
+      <module name="cloud-auth" target="1.8" />
+      <module name="cloud-common" target="1.8" />
       <module name="cloud-config (1)" target="1.8" />
+      <module name="cloud-eureka" target="1.8" />
       <module name="cloud-generator" target="1.8" />
       <module name="cloud-modules" target="1.8" />
+      <module name="com" target="1.8" />
+      <module name="com-code-generation" target="1.8" />
       <module name="com-config" target="1.8" />
+      <module name="com-generator" target="1.8" />
+      <module name="com-log" target="1.8" />
       <module name="com-swagger" target="1.8" />
       <module name="config" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-web" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="demo-server" target="1.8" />
+      <module name="demo-server (1)" target="1.8" />
+      <module name="demo-server-a" target="1.8" />
+      <module name="demo-server-b" target="1.8" />
+      <module name="demo-web-flux" target="1.8" />
       <module name="dome-gateway" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="generator" target="1.8" />
       <module name="nacos" target="1.8" />
+      <module name="nacos-client" target="1.8" />
       <module name="nacos-console" target="1.8" />
       <module name="netty" target="1.8" />
+      <module name="server-config" target="1.8" />
       <module name="spring-config" target="1.8" />
       <module name="spring-eureka" target="1.8" />
       <module name="upms" target="1.8" />
+      <module name="upms-api" target="1.8" />
+      <module name="upms-server" target="1.8" />
       <module name="web-flux" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -50,7 +63,11 @@
       <module name="cloud-eureka" options="-parameters" />
       <module name="cloud-gateway" options="-parameters" />
       <module name="cloud-generator" options="-parameters" />
+      <module name="cloud-oauth2" options="-parameters" />
+      <module name="cloud-upms" options="-parameters" />
+      <module name="cloud-web-mybatis" options="-parameters" />
       <module name="com" options="-parameters" />
+      <module name="com-code-generation" options="-parameters" />
       <module name="com-config" options="-parameters" />
       <module name="com-generator" options="-parameters" />
       <module name="com-log" options="-parameters" />
@@ -59,7 +76,8 @@
       <module name="config-client" options="-parameters" />
       <module name="config-web" options="-parameters" />
       <module name="demo" options="-parameters" />
-      <module name="demo-server-a" options="-parameters" />
+      <module name="demo-server (1)" options="-parameters" />
+      <module name="demo-server-a" options="" />
       <module name="demo-server-b" options="-parameters" />
       <module name="demo-web-flux" options="-parameters" />
       <module name="dome-gateway" options="-parameters" />
@@ -67,6 +85,7 @@
       <module name="gateway" options="-parameters" />
       <module name="generator" options="-parameters" />
       <module name="nacos" options="-parameters" />
+      <module name="nacos-client" options="-parameters" />
       <module name="netty" options="-parameters" />
       <module name="server-config" options="-parameters" />
       <module name="spring-config" options="-parameters" />
