@@ -14,7 +14,7 @@ import io.netty.util.CharsetUtil;
  *
  * @Title EchoClientHandler.java
  * @Package com.cloud.netty.demo.echo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/23 14:54
  */
 @ChannelHandler.Sharable//@Sharable标记这个类的实例可以在 channel 里共享

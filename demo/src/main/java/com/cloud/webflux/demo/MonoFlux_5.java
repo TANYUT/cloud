@@ -9,7 +9,7 @@ import reactor.core.publisher.Flux;
  *
  * @Title MonoFlux_5.java
  * @Package com.cloud.webflux.demo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/13 18:36
  */
 public class MonoFlux_5 {

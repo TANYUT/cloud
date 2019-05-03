@@ -7,7 +7,7 @@ package com.cloud.webflux.netty.demo.netty;
  *
  * @Title Server.java
  * @Package com.cloud.com.netty
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/23 12:56
  */
 public class Server {

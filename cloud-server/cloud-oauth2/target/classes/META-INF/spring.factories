@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.cloud.oauth2.config.MybatisPlusConfig,\
-  com.cloud.oauth2.config.WebClientBuilder

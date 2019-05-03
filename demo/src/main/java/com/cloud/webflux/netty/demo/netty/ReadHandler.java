@@ -13,7 +13,7 @@ import java.nio.channels.CompletionHandler;
  *
  * @Title ReadHandler.java
  * @Package com.cloud.com.netty
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/23 12:59
  */
 public class ReadHandler implements CompletionHandler<Integer, ByteBuffer> {

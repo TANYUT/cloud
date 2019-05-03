@@ -16,7 +16,7 @@ import org.springframework.web.server.WebHandler;
  *
  * @Title WebFluxConfig.java
  * @Package com.cloud.webflux.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/12 19:09
  */
 

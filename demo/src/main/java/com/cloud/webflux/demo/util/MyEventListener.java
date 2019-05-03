@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @Title MyEventListener.java
  * @Package com.cloud.webflux.demo.util
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/13 17:35
  */
 public interface MyEventListener<T> {

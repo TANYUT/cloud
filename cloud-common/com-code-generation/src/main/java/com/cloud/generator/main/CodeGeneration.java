@@ -29,7 +29,7 @@ public class CodeGeneration {
     //查询库里面所有表的SQL
     String sql = "select table_name tableName, engine, table_comment tableComment, create_time createTime from information_schema.tables  where table_schema = (select database()) and table_name like conca('%', #{tableName}, '%') order by create_time desc";
     private static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/cloud_oauth?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true";
+    private static String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/upms?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true";
     private static String JDBC_USERNAME = "root";
     private static String JDBC_PASSWORD = "root";
 //    private static String PLAN_ID = "ouinvvhbi28JyiHghv4C49QF9sMjvmto";
@@ -41,14 +41,13 @@ public class CodeGeneration {
 
         //要生成表的list
         List<String> tableNames = new ArrayList<>();
-        tableNames.add("clientdetails");
-        tableNames.add("oauth_access_token");
-        tableNames.add("oauth_approvals");
+        tableNames.add("sys_menu");
+        tableNames.add("sys_user");
+        tableNames.add("sys_user_menu");
+        tableNames.add("sys_user_role");
+        tableNames.add("sys_role_menu");
         tableNames.add("oauth_client_details");
-        tableNames.add("oauth_client_token");
-        tableNames.add("oauth_code");
-        tableNames.add("oauth_refresh_token");
-//        tableNames.add("tr_majors");
+
 
         //连接数据库
         JdbcUtil jdbcUtil = new JdbcUtil(jdbcBean.getJdbcDriver(),
@@ -67,7 +66,7 @@ public class CodeGeneration {
         }
         IoUtil.close(zip);
         //将文件输出到本地
-        OutputStream out = new FileOutputStream("F:/oauth2.zip");
+        OutputStream out = new FileOutputStream("F:/oauthupms.zip");
         InputStream is = new ByteArrayInputStream(outputStream.toByteArray());
         byte[] buff = new byte[1024];
         int len = 0;

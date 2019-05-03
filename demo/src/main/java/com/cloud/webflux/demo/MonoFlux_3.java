@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
  *
  * @Title MonoFlux_3.java
  * @Package com.cloud.webflux.demo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/13 17:14
  */
 public class MonoFlux_3 {

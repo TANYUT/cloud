@@ -15,7 +15,7 @@ import java.time.temporal.ChronoUnit;
  *
  * @Title MonoFlux_1.java
  * @Package com.cloud.webflux.demo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/13 16:31
  */
 public class MonoFlux_1 {

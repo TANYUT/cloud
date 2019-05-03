@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @Title MonoFlux_4.java
  * @Package com.cloud.webflux.demo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/13 17:35
  */
 public class MonoFlux_4 {

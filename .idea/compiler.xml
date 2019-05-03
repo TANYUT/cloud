@@ -8,9 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-gateway" />
-        <module name="cloud-oauth2" />
-        <module name="cloud-upms" />
-        <module name="cloud-web-mybatis" />
+        <module name="cloud-oauth2-upms" />
+        <module name="config-web-security-DB" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,11 +22,15 @@
       <module name="cloud-eureka" target="1.8" />
       <module name="cloud-generator" target="1.8" />
       <module name="cloud-modules" target="1.8" />
+      <module name="cloud-oauth2" target="1.8" />
+      <module name="cloud-upms" target="1.8" />
+      <module name="cloud-web-mybatis" target="1.8" />
       <module name="com" target="1.8" />
       <module name="com-code-generation" target="1.8" />
       <module name="com-config" target="1.8" />
       <module name="com-generator" target="1.8" />
       <module name="com-log" target="1.8" />
+      <module name="com-security" target="1.8" />
       <module name="com-swagger" target="1.8" />
       <module name="config" target="1.8" />
       <module name="config-client" target="1.8" />
@@ -64,6 +67,7 @@
       <module name="cloud-gateway" options="-parameters" />
       <module name="cloud-generator" options="-parameters" />
       <module name="cloud-oauth2" options="-parameters" />
+      <module name="cloud-oauth2-upms" options="-parameters" />
       <module name="cloud-upms" options="-parameters" />
       <module name="cloud-web-mybatis" options="-parameters" />
       <module name="com" options="-parameters" />
@@ -71,10 +75,12 @@
       <module name="com-config" options="-parameters" />
       <module name="com-generator" options="-parameters" />
       <module name="com-log" options="-parameters" />
+      <module name="com-security" options="-parameters" />
       <module name="com-swagger" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-web" options="-parameters" />
+      <module name="config-web-security-DB" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo-server (1)" options="-parameters" />
       <module name="demo-server-a" options="" />

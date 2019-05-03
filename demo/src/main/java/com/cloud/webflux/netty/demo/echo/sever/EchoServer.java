@@ -16,7 +16,7 @@ import java.net.InetSocketAddress;
  *
  * @Title EchoServer.java
  * @Package com.cloud.netty.demo.echo
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/23 14:39
  */
 public class EchoServer {

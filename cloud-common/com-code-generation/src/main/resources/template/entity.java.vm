@@ -8,7 +8,6 @@ import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Date;
 #if(${hasBigDecimal})
 import java.math.BigDecimal;
@@ -18,9 +17,9 @@ import java.math.BigDecimal;
  * <p>
  * ${className}实体类
  * </p>
+ *
  * @Title: ${className}Controller.java
  * @Package: ${package}.${moduleName}.entity;
- *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}
  * @Version: ${version}

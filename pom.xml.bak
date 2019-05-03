@@ -12,6 +12,7 @@
         <module>client-api</module>
         <module>cloud-common</module>
         <module>cloud-config</module>
+
         <module>cloud-server</module>
 
     </modules>

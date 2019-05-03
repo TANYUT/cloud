@@ -3,7 +3,7 @@ package ${package}.${moduleName}.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.cloud.utils.ResEntity
+import com.cloud.web.utils.ResEntity;
 import ${package}.${moduleName}.entity.${className};
 import ${package}.${moduleName}.service.${className}Service;
 import lombok.AllArgsConstructor;
@@ -16,9 +16,9 @@ import io.swagger.annotations.*;
  * <p>
  * ${className}Controller控制层
  * </p>
+ *
  * @Title: ${className}Controller.java
  * @Package: ${package}.${moduleName}.controller;
- *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}
  * @Version: ${version}
@@ -38,9 +38,9 @@ public class ${className}Controller {
             @ApiImplicitParam(name = "current", value = "当前页索引", required = true, paramType = "query", dataType = "String"),
             @ApiImplicitParam(name = "size", value = "页显示记录数", required = true, paramType = "query", dataType = "String"),
     })
-    @GetMapping("/page")
-    public ResEntity get${className}Page(Page<${className}> page, ${className} ${classname}) {
-        return new ResEntity(service.page(page,
+    @GetMapping("/getPage")
+    public ResEntity getPage(Page<${className}> page, ${className} ${classname}) {
+        return ResEntity.resEntity(service.page(page,
                 Wrappers.<${className}>query().lambda()
         ));
     }
@@ -54,7 +54,7 @@ public class ${className}Controller {
     })
     @GetMapping("/{${pk.lowerAttrName}}")
     public ResEntity getById(@PathVariable("${pk.lowerAttrName}") ${pk.attrType} ${pk.lowerAttrName}) {
-        return new ResEntity(service.getById(${pk.lowerAttrName}));
+        return ResEntity.resEntity(service.getById(${pk.lowerAttrName}));
     }
 
 
@@ -66,7 +66,7 @@ public class ${className}Controller {
     })
     @PostMapping
     public ResEntity save(@RequestBody ${className} ${classname}) {
-        return new ResEntity(service.save(${classname}));
+        return ResEntity.resEntity(service.save(${classname}));
     }
 
 
@@ -78,7 +78,7 @@ public class ${className}Controller {
     })
     @PutMapping
     public ResEntity update(@RequestBody ${className} ${classname}) {
-        return new ResEntity(service.updateById(${classname}));
+        return ResEntity.resEntity(service.updateById(${classname}));
     }
 
     @ApiOperation(value = "ID删除${className}", httpMethod = "DELETE", notes = "", response = ResEntity.class,
@@ -89,6 +89,6 @@ public class ${className}Controller {
     })
     @DeleteMapping("/{${pk.lowerAttrName}}")
     public ResEntity removeById(@PathVariable ${pk.attrType} ${pk.lowerAttrName}) {
-        return new ResEntity(service.removeById(${pk.lowerAttrName}));
+        return ResEntity.resEntity(service.removeById(${pk.lowerAttrName}));
     }
 }

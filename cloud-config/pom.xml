@@ -12,10 +12,8 @@
 
     <artifactId>cloud-config</artifactId>
     <packaging>pom</packaging>
-    <description>spring cloud 的服务 gateway oauth等</description>
+    <description> 配置</description>
     <modules>
-        <module>cloud-web-mybatis</module>
-        <!--<module>cloud-oauth2</module>-->
-        <!--<module>cloud-upms</module>-->
+        <module>config-web-security-DB</module>
     </modules>
 </project>

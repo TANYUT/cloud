@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
  *
  * @Title AsyncServerHandler.java
  * @Package com.cloud.com.netty
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/23 12:57
  */
 public class AsyncServerHandler implements Runnable {

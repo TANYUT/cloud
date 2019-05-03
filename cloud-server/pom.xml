@@ -9,13 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-
     <artifactId>cloud-server</artifactId>
     <packaging>pom</packaging>
     <description>spring cloud 的服务 gateway oauth等</description>
     <modules>
         <module>cloud-gateway</module>
-        <module>cloud-oauth2</module>
-        <module>cloud-upms</module>
+        <module>cloud-oauth2-upms</module>
     </modules>
 </project>

@@ -50,7 +50,7 @@ public class StripPrefixFilter implements GlobalFilter, Ordered {
 //                    }
 //                })
                 .request(newRequest.mutate().build()).build()).then(Mono.fromRunnable(() -> {
-            System.err.println("test");
+//            System.err.println("test");
 
         }));
     }

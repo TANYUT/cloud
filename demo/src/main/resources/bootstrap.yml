@@ -10,3 +10,16 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yml
+
+
+
+security:
+  oauth2:
+    client:
+      client-id: upms
+      client-secret: upms
+      access-token-uri: http://localhost:8050/oauth/token
+      user-authorization-uri: http://localhost:8050/oauth/authorize
+      scope: upmsApp
+    resource:
+      token-info-uri: http://localhost:8050/oauth/check_token

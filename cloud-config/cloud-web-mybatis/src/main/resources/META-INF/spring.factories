@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-   com.cloud.web.config.WebClientBuilder,\
-   com.cloud.web.config.MybatisPlusConfig,\
-   com.cloud.web.config.SwaggerConfig

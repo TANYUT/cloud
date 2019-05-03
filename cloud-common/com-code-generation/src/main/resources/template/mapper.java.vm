@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Param;
  * <p>
  * ${className} Mapper接口
  * </p>
+ *
  * @Title: ${className}Controller.java
  * @Package: ${package}.${moduleName}.mapper;
- *
  * @Author <a href="mailto:${email}">${author}</a>
  * @Date: ${ctime}
  * @Version: ${version}
