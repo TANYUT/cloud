@@ -1,5 +1,7 @@
 package com.cloud.oauthupms.controller;
 
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
@@ -8,6 +10,7 @@ import com.cloud.oauthupms.entity.User;
 import com.cloud.oauthupms.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.annotations.*;
 
@@ -16,9 +19,9 @@ import io.swagger.annotations.*;
  * <p>
  * UserController控制层
  * </p>
+ *
  * @Title: UserController.java
  * @Package: com.cloud.oauthupms.controller;
- *
  * @Author <a href="mailto:au.t@foxmail.com">au.T</a>
  * @Date: 2019-05-03 15:33:17
  * @Version: 1.0.0-SNAPSHOT
@@ -30,6 +33,12 @@ import io.swagger.annotations.*;
 public class UserController {
     private final UserService service;
 
+    // 添加一个测试访问接口
+    @GetMapping("/user")
+    public Object getUser(Authentication authentication) {
+        System.err.println(JSONUtil.parseObj(authentication).toStringPretty());
+        return authentication;
+    }
 
     @ApiOperation(value = "根据对象分页查询User", httpMethod = "GET", notes = "", response = ResEntity.class,
             extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:17", value = "au.t@foxmail.com"))
@@ -91,4 +100,6 @@ public class UserController {
     public ResEntity removeById(@PathVariable Integer userId) {
         return ResEntity.resEntity(service.removeById(userId));
     }
+
+
 }

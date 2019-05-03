@@ -10,12 +10,15 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
 import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
 import javax.sql.DataSource;
 
@@ -31,6 +34,7 @@ import javax.sql.DataSource;
  */
 
 @Configuration
+@EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -42,6 +46,11 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
 
+    @Bean
+    public ClientDetailsService jdbcClientDetails() {
+        // 基于 JDBC 实现，需要事先在数据库配置客户端信息
+        return new JdbcClientDetailsService(dataSource);
+    }
 
     /**
      * <p>
@@ -54,15 +63,9 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
      */
     @Bean
     public TokenStore tokenStore() {
-        return new JdbcTokenStore(dataSource);//数据库存储Token
-        //return new RedisTokenStore(redisConnectionFactory);//Redis存储Token
+        //return new JdbcTokenStore(dataSource);//数据库存储Token
+        return new RedisTokenStore(redisConnectionFactory);//Redis存储Token
         //return new InMemoryTokenStore();//内存存储Token
-    }
-
-    @Bean
-    public ClientDetailsService jdbcClientDetails() {
-        // 基于 JDBC 实现，需要事先在数据库配置客户端信息
-        return new JdbcClientDetailsService(dataSource);
     }
 
     /**
@@ -74,23 +77,15 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-
-//        clients.withClientDetails(jdbcClientDetails());
-//        jdbcClientDetails().loadClientByClientId()
-        clients.inMemory()
-                .withClient("upms")//用于标识用户ID
-                .authorizedGrantTypes("authorization_code", "client_credentials", "password", "implicit", "refresh_token")//授权方式
-                .scopes("upmsApp")//授权范围
-                .secret(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("upms"))
-                .and()
-                .withClient("webUi")
-                .authorizedGrantTypes("authorization_code", "client_credentials", "password", "implicit", "refresh_token")
-                .scopes("webUiApp")
-                .secret(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("webUi"))
-        ;
-
+        clients.withClientDetails(jdbcClientDetails());
+//        clients.inMemory()
+//                .withClient("client1")//用于标识用户ID
+//                .authorizedGrantTypes("authorization_code","client_credentials","password","implicit","refresh_token")//授权方式
+//                .scopes("test")//授权范围
+//                .secret(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("123456"));//客户端安全码,secret密码配置从 Spring Security 5.0开始必须以 {bcrypt}+加密后的密码 这种格式填写;
     }
 
+//
 
     /**
      * 用来配置令牌端点(Token Endpoint)的安全约束.
@@ -105,16 +100,14 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     }
 
     /**
-     *
+     * 用来配置授权（authorization）以及令牌（token）的访问端点和令牌服务(token services)
      *
      * @param endpoints
      * @throws Exception
      */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-//        endpoints.tokenStore(tokenStore()).authenticationManager(authenticationManager);
-        // 用来配置授权（authorization）以及令牌（token）的访问端点和令牌服务(token services)
+        // 配置tokenStore
         endpoints.authenticationManager(authenticationManager).tokenStore(tokenStore()).userDetailsService(userDetailsService);
     }
-
 }

@@ -51,13 +51,13 @@ public class ResEntity<T> implements Serializable {
     }
 
     /**
-     * @params: [type, msg]
-     * @params: [响应类型参考ResTypeEnum, 提示内容参考ResMsgEnum]
+     * @params: [type, msg]  password  pass Word
+     * @params: [响应类型参考ResTypeEnum, 提 示内容参考ResMsgEnum]
      * @Author: au .T
      * @Date: 2019/4/26 13:27
      */
     public static ResEntity resEntity(String type, String msg) {
-        return ResEntity.resEntity(type, msg);
+        return new ResEntity(type, msg);
     }
 
     /**
@@ -66,6 +66,6 @@ public class ResEntity<T> implements Serializable {
      * @Date: 2019/4/26 13:29
      */
     public static <T> ResEntity resEntity(T data) {
-        return ResEntity.resEntity(data);
+        return new ResEntity(data);
     }
 }
