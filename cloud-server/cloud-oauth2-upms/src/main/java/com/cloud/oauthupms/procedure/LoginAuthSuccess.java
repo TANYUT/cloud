@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  *
  * @Title LoginAuthSuccess.java
  * @Package com.cloud.oauthupms.procedure
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/3 15:51
  */
 @Component

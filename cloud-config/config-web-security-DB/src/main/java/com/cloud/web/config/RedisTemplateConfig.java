@@ -18,7 +18,7 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
  *
  * @Title RedisTemplateConfig.java
  * @Package com.cloud.web.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/2 17:57
  */
 

@@ -20,7 +20,7 @@ import java.net.URLEncoder;
  *
  * @Title BaseAction.java
  * @Package com.cloud.web.web
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 21:12
  */
 @Slf4j

@@ -4,4 +4,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
    com.cloud.web.config.SwaggerConfig,\
    com.cloud.web.config.FdfsConnectionConfig,\
    com.cloud.web.config.JacksonConfig,\
-   com.cloud.web.config.RedisTemplateConfig
+   com.cloud.web.config.RedisTemplateConfig,\
+   com.cloud.web.server.impl.OauthUser

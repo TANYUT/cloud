@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @Title ToBean.java
  * @Package com.cloud.generator.utils
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/3/21 18:16
  */
 public class ToBean {

@@ -29,7 +29,7 @@ import javax.sql.DataSource;
  *
  * @Title AuthorizationServerConfiguration.java
  * @Package com.cloud.oauthupms.server.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/3 16:14
  */
 

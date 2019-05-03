@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @Title GeneratePhotos.java
  * @Package com.cloud.generator.utils
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/9 10:52
  */
 public class GeneratePhotos {

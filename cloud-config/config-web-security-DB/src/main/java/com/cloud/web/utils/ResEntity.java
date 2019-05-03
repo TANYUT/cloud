@@ -18,7 +18,7 @@ import java.io.Serializable;
  *
  * @Title ResEntity.java
  * @Package com.cloud.web.utils
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 21:11
  */
 @Builder

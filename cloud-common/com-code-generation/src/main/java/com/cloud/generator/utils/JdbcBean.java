@@ -9,7 +9,7 @@ import lombok.Data;
  *
  * @Title JdbcBean.java
  * @Package com.cloud.codegen.utils
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/3/20 18:13
  */
 @Data

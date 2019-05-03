@@ -28,7 +28,7 @@ import java.time.format.DateTimeFormatter;
  *
  * @Title JacksonConfig.java
  * @Package com.cloud.web.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/2 18:32
  */
 

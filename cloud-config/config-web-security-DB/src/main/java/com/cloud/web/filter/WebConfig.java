@@ -17,7 +17,7 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
  *
  * @Title WebConfig.java
  * @Package com.cloud.web.filter
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/1 16:07metaDataSourceAdvisor
  */
 

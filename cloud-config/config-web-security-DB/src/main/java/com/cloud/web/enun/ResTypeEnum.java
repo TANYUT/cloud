@@ -9,7 +9,7 @@ import lombok.Getter;
  *
  * @Title ResTypeEnum.java
  * @Package com.cloud.web.enun
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 21:10
  */
 public enum ResTypeEnum {

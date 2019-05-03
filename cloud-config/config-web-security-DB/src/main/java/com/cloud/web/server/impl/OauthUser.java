@@ -1,8 +1,7 @@
-package com.cloud.oauthupms.server.impl;
+package com.cloud.web.server.impl;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.Singular;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
@@ -11,23 +10,33 @@ import java.util.Collection;
 
 /**
  * <p>
- * 自定义Token 用户类
+ *
  * </p>
  *
- * @Title OauthUser.java
- * @Package com.cloud.oauthupms.server.impl
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
- * @Date 2019/5/3 17:40
+ * @Title OauthUser.java  userInfo
+ * @Package com.cloud.web.server.impl
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
+ * @Date 2019/5/3 20:14
  */
 public class OauthUser extends User implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    /**
+     * 该用户的角色ID多个 , 隔开
+     */
     @Getter
     @Setter
-    private String role;
+    private String roleIds;
+    /**
+     * 该用户可以执行的方法  , 隔开
+     */
+    @Getter
+    @Setter
+    private String roleMethod;
 
     public OauthUser(String username, String password, Collection<? extends GrantedAuthority> authorities) {
         super(username, password, authorities);
-        this.role="ADMIN";
+        this.roleIds = "ADMIN,USER";
+        this.roleMethod = "GET,POST";
     }
 }

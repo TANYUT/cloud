@@ -22,7 +22,7 @@ import java.util.zip.ZipOutputStream;
  *
  * @Title CodeGeneration.java
  * @Package com.cloud.generator.main
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 17:14
  */
 public class CodeGeneration {

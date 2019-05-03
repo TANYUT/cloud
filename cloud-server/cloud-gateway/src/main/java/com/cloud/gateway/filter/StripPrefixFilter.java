@@ -22,7 +22,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.a
  *
  * @Title StripPrefixFilter.java
  * @Package com.cloud.gateway.filter
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 10:05
  */
 @Configuration

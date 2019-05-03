@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @Title MenuTreeUtil.java
  * @Package com.cloud.oauthupms.utils
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/3 15:39
  */
 public class MenuTreeUtil {

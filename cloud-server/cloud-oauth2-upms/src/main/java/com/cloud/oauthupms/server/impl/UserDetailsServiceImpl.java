@@ -1,20 +1,16 @@
 package com.cloud.oauthupms.server.impl;
 
-import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.json.JSONUtil;
 import com.cloud.oauthupms.entity.User;
 import com.cloud.oauthupms.service.UserService;
+import com.cloud.web.server.impl.OauthUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -26,7 +22,7 @@ import java.util.Set;
  *
  * @Title UserDetailsServiceImpl.java
  * @Package com.cloud.oauthupms.server.impl
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/3 16:00
  */
 @Configuration

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
  *
  * @Title WebClientBuilder.java
  * @Package com.cloud.web.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 20:59
  */
 public class WebClientBuilder {

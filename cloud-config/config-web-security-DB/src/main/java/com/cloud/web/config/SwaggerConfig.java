@@ -13,7 +13,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  *
  * @Title SwaggerConfig.java
  * @Package com.cloud.web.config
- * @Author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/4/28 21:07
  */
 @EnableSwaggerBootstrapUI
