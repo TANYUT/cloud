@@ -8,7 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-gateway" />
-        <module name="cloud-oauth2-upms" />
+        <module name="cloud-oauth2-admin" />
+        <module name="cloud-oauth2-upms (1)" />
         <module name="config-web-security-DB" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,9 @@
       <module name="cloud-generator" target="1.8" />
       <module name="cloud-modules" target="1.8" />
       <module name="cloud-oauth2" target="1.8" />
+      <module name="cloud-oauth2-upms" target="1.8" />
+      <module name="cloud-oauth2-upms (1)" target="1.8" />
+      <module name="cloud-oauth2-upms (2)" target="1.8" />
       <module name="cloud-upms" target="1.8" />
       <module name="cloud-web-mybatis" target="1.8" />
       <module name="com" target="1.8" />
@@ -67,7 +71,9 @@
       <module name="cloud-gateway" options="-parameters" />
       <module name="cloud-generator" options="-parameters" />
       <module name="cloud-oauth2" options="-parameters" />
+      <module name="cloud-oauth2-admin" options="-parameters" />
       <module name="cloud-oauth2-upms" options="-parameters" />
+      <module name="cloud-oauth2-upms (2)" options="-parameters" />
       <module name="cloud-upms" options="-parameters" />
       <module name="cloud-web-mybatis" options="-parameters" />
       <module name="com" options="-parameters" />

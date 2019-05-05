@@ -11,3 +11,4 @@
 # 添加文件修改的文件
 # git add [fileName]
 # 提交本地仓库 commit 在提交到远程仓库 push
+# git reset --hard 撤销本地全部修改

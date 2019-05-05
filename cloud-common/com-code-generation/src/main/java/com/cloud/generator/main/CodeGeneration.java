@@ -66,7 +66,7 @@ public class CodeGeneration {
         }
         IoUtil.close(zip);
         //将文件输出到本地
-        OutputStream out = new FileOutputStream("F:/oauthupms.zip");
+        OutputStream out = new FileOutputStream("F:/admin.zip");
         InputStream is = new ByteArrayInputStream(outputStream.toByteArray());
         byte[] buff = new byte[1024];
         int len = 0;
