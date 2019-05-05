@@ -38,6 +38,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Qualifier("dataSource")
     @Autowired
     private DataSource dataSource;
+    @Qualifier("userDetailsServiceImpl")
     @Autowired
     private UserDetailsService userDetailsService;
     @Autowired

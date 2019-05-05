@@ -54,4 +54,11 @@ spring:
         server-addr: 127.0.0.1:8848
         file-extension: yml
 
+# 直接放行URL
+ignore:
+  urls:
+    - /actuator/**
+    - /user/password/**
+    - /user/info/*
+    - /log/**
 

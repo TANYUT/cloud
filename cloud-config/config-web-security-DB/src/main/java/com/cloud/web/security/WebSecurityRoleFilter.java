@@ -2,7 +2,9 @@ package com.cloud.web.security;
 
 
 import cn.hutool.json.JSONUtil;
+import com.cloud.web.security.config.IgnoreUrlConfig;
 import com.cloud.web.utils.OauthUserTokenUtils;
+import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.web.filter.GenericFilterBean;
 
 import javax.servlet.FilterChain;
@@ -24,10 +26,14 @@ import java.io.IOException;
 public class WebSecurityRoleFilter extends GenericFilterBean {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-//        System.err.println("WebSecurityRoleFilter");
+        System.err.println("WebSecurityRoleFilter");
 //        System.err.println(JSONUtil.parseObj(OauthUserTokenUtils.getAuthentication()).toStringPretty());
 //        System.err.println("--------------------------------");
 //        System.err.println(JSONUtil.parseObj(OauthUserTokenUtils.getOauthUser()).toStringPretty());
+
+//        String grantType = request.getQueryParams().getFirst("grant_type");
+//        IgnoreUrlConfig ignoreUrlConfig = new IgnoreUrlConfig();
+//        System.err.println(ignoreUrlConfig.getUrls());
         chain.doFilter(request, response);
     }
 }

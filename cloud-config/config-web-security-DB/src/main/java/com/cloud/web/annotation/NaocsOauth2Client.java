@@ -24,5 +24,5 @@ import java.lang.annotation.Target;
 @RefreshScope
 @EnableDiscoveryClient
 @EnableResourceServer
-public @interface ClientConfig {
+public @interface NaocsOauth2Client {
 }

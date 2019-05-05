@@ -3,6 +3,8 @@ package com.cloud.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cloud.admin.entity.Menu;
 
+import java.util.List;
+
 /**
  * <p>
  * Menu Mapper接口
@@ -15,11 +17,7 @@ import com.cloud.admin.entity.Menu;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface MenuMapper extends BaseMapper<Menu> {
-    /**
-     * 菜单权限表简单分页查询
-     * @param menu 菜单权限表
-     * @return
-     *   IPage<Menu> getMenuPage(Page page, @Param("menu") Menu menu);
-     */
+
+    List<Menu> getMeun();
 
 }

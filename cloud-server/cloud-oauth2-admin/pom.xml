@@ -10,7 +10,7 @@
     <groupId>com.cloud</groupId>
     <artifactId>cloud-oauth2-admin</artifactId>
     <name>${project.artifactId}</name>
-    <description>用户权限 以及Oaut2 App</description>
+    <description>用户权限 以及Oaut2 服务端 App</description>
 
     <dependencies>
         <dependency>
@@ -18,26 +18,14 @@
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-security</artifactId>
-            <exclusions>
-                <!--旧版本 redis操作有问题-->
-                <exclusion>
-                    <artifactId>spring-security-oauth2</artifactId>
-                    <groupId>org.springframework.security.oauth</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.cloud</groupId>
             <artifactId>config-web-security-DB</artifactId>
             <version>${com-cloud.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.1.1</version>
+        </dependency>
     </dependencies>
-
-
 </project>

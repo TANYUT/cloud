@@ -15,11 +15,5 @@ import com.cloud.admin.entity.RoleMenu;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface RoleMenuMapper extends BaseMapper<RoleMenu> {
-    /**
-     * 角色菜单表简单分页查询
-     * @param roleMenu 角色菜单表
-     * @return
-     *   IPage<RoleMenu> getRoleMenuPage(Page page, @Param("roleMenu") RoleMenu roleMenu);
-     */
 
 }

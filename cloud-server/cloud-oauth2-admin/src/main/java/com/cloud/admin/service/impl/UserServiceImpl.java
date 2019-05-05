@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
  *
  * @Title: UserController.java
  * @Package: com.cloud.service.impl
- * @Author <a href="mailto:au.t@foxmail.com">au.T</a>
+ * @Author: <a href="mailto:au.t@foxmail.com">au.T</a>
  * @Date: 2019-05-03 15:33:17
  * @Version: 1.0.0-SNAPSHOT
  */
@@ -28,7 +28,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         if (StrUtil.isNotBlank(userName)) {
             return this.getOne(Wrappers.<User>query().lambda().eq(User::getUserName, userName));
         }
-
         return null;
     }
 }

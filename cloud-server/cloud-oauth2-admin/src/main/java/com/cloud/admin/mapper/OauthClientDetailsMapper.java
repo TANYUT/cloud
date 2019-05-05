@@ -15,11 +15,6 @@ import com.cloud.admin.entity.OauthClientDetails;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface OauthClientDetailsMapper extends BaseMapper<OauthClientDetails> {
-    /**
-     * 简单分页查询
-     * @param oauthClientDetails 
-     * @return
-     *   IPage<OauthClientDetails> getOauthClientDetailsPage(Page page, @Param("oauthClientDetails") OauthClientDetails oauthClientDetails);
-     */
+
 
 }

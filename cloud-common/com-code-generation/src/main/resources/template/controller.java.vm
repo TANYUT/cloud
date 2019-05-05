@@ -40,7 +40,7 @@ public class ${className}Controller {
     })
     @GetMapping("/getPage")
     public ResEntity getPage(Page<${className}> page, ${className} ${classname}) {
-        return ResEntity.resEntity(service.page(page,
+        return  ResEntity.<IPage>resEntity(service.page(page,
                 Wrappers.<${className}>query().lambda()
         ));
     }
@@ -54,7 +54,7 @@ public class ${className}Controller {
     })
     @GetMapping("/{${pk.lowerAttrName}}")
     public ResEntity getById(@PathVariable("${pk.lowerAttrName}") ${pk.attrType} ${pk.lowerAttrName}) {
-        return ResEntity.resEntity(service.getById(${pk.lowerAttrName}));
+        return ResEntity.<${className}>resEntity(service.getById(${pk.lowerAttrName}));
     }
 
 

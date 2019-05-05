@@ -15,11 +15,6 @@ import com.cloud.admin.entity.User;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface UserMapper extends BaseMapper<User> {
-    /**
-     * 简单分页查询
-     * @param user 
-     * @return
-     *   IPage<User> getUserPage(Page page, @Param("user") User user);
-     */
+
 
 }

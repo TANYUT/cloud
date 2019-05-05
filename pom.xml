@@ -29,6 +29,8 @@
         <cloud-admin-server.version>2.1.3</cloud-admin-server.version>
         <spring-cloud-alibaba.version>0.2.1.RELEASE</spring-cloud-alibaba.version>
         <spring-platform.version>Cairo-SR5</spring-platform.version>
+        <!--注意 这个版本要2.3.3  版本  以前的操作Redis 没有定义set 方法-->
+        <spring-security-oauth.version>2.3.3.RELEASE</spring-security-oauth.version>
         <!--  swagger2  -->
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <swagger-bootstrap-ui.version>1.9.3</swagger-bootstrap-ui.version>

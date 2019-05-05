@@ -15,11 +15,5 @@ import com.cloud.admin.entity.UserMenu;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface UserMenuMapper extends BaseMapper<UserMenu> {
-    /**
-     * 角色与部门对应关系简单分页查询
-     * @param userMenu 角色与部门对应关系
-     * @return
-     *   IPage<UserMenu> getUserMenuPage(Page page, @Param("userMenu") UserMenu userMenu);
-     */
 
 }

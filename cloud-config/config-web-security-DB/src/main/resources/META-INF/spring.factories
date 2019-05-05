@@ -5,4 +5,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
    com.cloud.web.config.FdfsConnectionConfig,\
    com.cloud.web.config.JacksonConfig,\
    com.cloud.web.config.RedisTemplateConfig,\
-   com.cloud.web.security.WebSecurityRoleFilter
+   com.cloud.web.security.WebSecurityRoleFilter,\
+   com.cloud.web.security.config.IgnoreUrlConfig

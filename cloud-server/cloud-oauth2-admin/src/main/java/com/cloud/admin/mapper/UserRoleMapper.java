@@ -15,11 +15,4 @@ import com.cloud.admin.entity.UserRole;
  * @Version: 1.0.0-SNAPSHOT
  */
 public interface UserRoleMapper extends BaseMapper<UserRole> {
-    /**
-     * 用户角色表简单分页查询
-     * @param userRole 用户角色表
-     * @return
-     *   IPage<UserRole> getUserRolePage(Page page, @Param("userRole") UserRole userRole);
-     */
-
 }

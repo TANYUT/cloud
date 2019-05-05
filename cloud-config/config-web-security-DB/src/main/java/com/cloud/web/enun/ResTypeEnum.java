@@ -35,4 +35,8 @@ public enum ResTypeEnum {
         }
         return null;
     }
+
+    public static ResTypeEnum resFlag(boolean flag) {
+        return flag ? ResTypeEnum.SUCCESS : ResTypeEnum.ERROR;
+    }
 }
