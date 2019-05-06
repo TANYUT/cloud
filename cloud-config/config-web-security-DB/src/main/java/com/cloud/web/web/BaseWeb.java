@@ -24,7 +24,7 @@ import java.net.URLEncoder;
  * @Date 2019/4/28 21:12
  */
 @Slf4j
-public class BaseAction {
+public class BaseWeb {
     /**
      * <p>
      * method: 'post',
