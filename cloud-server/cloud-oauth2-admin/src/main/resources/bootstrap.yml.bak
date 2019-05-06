@@ -1,0 +1,64 @@
+server:
+  port: 8051
+  #security:
+  #  oauth2:
+  #    client:
+  #      client-id: upms
+  #      client-secret: upms
+  #      access-token-uri: http://localhost:8050/oauth/token
+  #      user-authorization-uri: http://localhost:8050/oauth/authorize
+  #      scope: upmsApp
+  #    resource:
+  #      token-info-uri: http://localhost:8050/oauth/check_token
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  redis:
+    remote: false        #cachecloud 获取
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password:
+  rabbitmq:
+    host: ${RABBIT_MQ_HOST:localhost}
+    port:  ${RABBIT_MQ_PORT:5672}
+    username: guest
+    password: guest
+  application:
+    name: cloud-oauth2-upms
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/upms?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    #    driver-class-name:  com.mysql.cj.jdbc.Drive
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+      username: ${spring.datasource.username}
+      password: ${spring.datasource.password}
+      jdbc-url: ${spring.datasource.url}
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+
+# 直接放行URL
+ignore:
+  urls:
+    - /actuator/**
+    - /user/password/**
+    - /user/info/*
+    - /log/**
+

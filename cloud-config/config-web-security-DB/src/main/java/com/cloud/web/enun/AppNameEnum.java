@@ -7,9 +7,9 @@ import lombok.Getter;
  * App jar 枚举类
  * </p>
  *
- * @Title AppNameEnum.java
- * @Package com.cloud.web.enun
  * @author <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Title AppNameEnum.java
+ * @Package com.cloud.web.enum
  * @Date 2019/5/5 14:01
  */
 public enum AppNameEnum {
@@ -24,7 +24,6 @@ public enum AppNameEnum {
 
     AppNameEnum(String appName) {
         this.appName = appName;
-
     }
 
 }

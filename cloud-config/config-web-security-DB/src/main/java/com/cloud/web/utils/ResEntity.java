@@ -1,7 +1,5 @@
 package com.cloud.web.utils;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cloud.web.enun.ResMsgEnum;
 import com.cloud.web.enun.ResTypeEnum;
 import io.swagger.annotations.ApiModel;
@@ -11,26 +9,24 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 import lombok.experimental.Accessors;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
 
 /**
  * <p>
- * 响应封装类
+ * 响应封装实体类
  * </p>
  *
- * @Title ResEntity.java
- * @Package com.cloud.web.utils
- * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
- * @Date 2019/4/28 21:11
+ * @Title: ResEntity.java
+ * @Package: com.cloud.web.utils
+ * @Author: <a href="mailto:au.t@foxmail.com">au .T</a>
+ * @Date: 2019/4/28 21:11
  */
 @Builder
 @ToString
 @Accessors(chain = true)
 @AllArgsConstructor
-@ApiModel("返回实体类")
+@ApiModel("响应封装实体类")
 @Data
 public class ResEntity<T> implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -56,12 +52,6 @@ public class ResEntity<T> implements Serializable {
         this.msg = ResMsgEnum.resFlag(flag).getMsg();
     }
 
-    private ResEntity(String params) {
-        ResTypeEnum typeEnum = ResTypeEnum.INFO;
-        this.title = typeEnum.getTitle();
-        this.type = typeEnum.getType();
-        this.msg = params + ResMsgEnum.MISSING_PARAMS.getMsg();
-    }
 
     private ResEntity(ResTypeEnum type, String msg) {
         this.msg = msg;
@@ -78,11 +68,11 @@ public class ResEntity<T> implements Serializable {
 
     /**
      * <p>
-     * 注意  resEntity 这是一个重载的方法
+     * 注意  resEntity 这是一个重载的方法 重载了 boolean , String ,  泛型
      * 传泛型一定要申明是哪个类到这个泛型里面
      * 例如：
      * ResEntity.<IPage>resEntity(new IPage());
-     * ResEntity.<String>resEntity(new String())
+     * ResEntity.<List>resEntity(new ArrayList());
      * </p>
      *
      * @params: [data 响应数据]
@@ -90,7 +80,7 @@ public class ResEntity<T> implements Serializable {
      * @Author: au .T
      * @Date: 2019/4/26 13:29
      */
-    public static <T> ResEntity<T> resEntity(T data) {
+    public static <T> ResEntity resEntity(T data) {
         return new ResEntity(data);
     }
 
@@ -108,6 +98,20 @@ public class ResEntity<T> implements Serializable {
      */
     public static ResEntity resEntity(boolean flag) {
         return new ResEntity(flag);
+    }
+
+    /**
+     * <p>
+     * INFO 提示内容
+     * </p>
+     *
+     * @params: [msg]
+     * @return: com.cloud.web.utils.ResEntity
+     * @Author: au .T
+     * @Date: 2019/5/6 10:22
+     */
+    public static ResEntity resEntity(String msg) {
+        return new ResEntity(ResTypeEnum.INFO, msg);
     }
 
     /**
@@ -140,15 +144,17 @@ public class ResEntity<T> implements Serializable {
     }
 
     /**
+     * <p>
      * 参数缺失
+     * </p>
      *
-     * @params: [parames]  缺失的参数
+     * @params: [params]  缺失的参数
      * @return: com.cloud.web.utils.ResEntity
      * @Author: au .T
      * @Date: 2019/5/5 14:17
      */
-    public static ResEntity missingParameter(String parames) {
-        return new ResEntity(parames);
+    public static ResEntity missingParames(String params) {
+        return new ResEntity(ResTypeEnum.INFO, params + ResMsgEnum.MISSING_PARAMS.getMsg());
     }
 
 

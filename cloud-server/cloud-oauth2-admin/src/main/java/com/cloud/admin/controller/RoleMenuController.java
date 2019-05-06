@@ -1,5 +1,6 @@
 package com.cloud.admin.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.cloud.web.utils.ResEntity;
@@ -38,7 +39,7 @@ public class RoleMenuController {
     })
     @GetMapping("/getPage")
     public ResEntity getPage(Page<RoleMenu> page, RoleMenu roleMenu) {
-        return ResEntity.resEntity(service.page(page,
+        return ResEntity.<IPage>resEntity(service.page(page,
                 Wrappers.<RoleMenu>query().lambda()
         ));
     }

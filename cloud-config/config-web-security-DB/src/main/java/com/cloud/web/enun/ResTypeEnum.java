@@ -33,7 +33,7 @@ public enum ResTypeEnum {
                 return status;
             }
         }
-        return null;
+        return ResTypeEnum.INFO;
     }
 
     public static ResTypeEnum resFlag(boolean flag) {

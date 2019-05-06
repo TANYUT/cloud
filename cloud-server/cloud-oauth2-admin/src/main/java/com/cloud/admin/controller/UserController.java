@@ -1,13 +1,12 @@
 package com.cloud.admin.controller;
 
-import cn.hutool.json.JSONUtil;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.cloud.web.utils.ResEntity;
 import com.cloud.admin.entity.User;
 import com.cloud.admin.service.UserService;
 import lombok.AllArgsConstructor;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.annotations.*;
 
@@ -40,7 +39,7 @@ public class UserController {
     })
     @GetMapping("/getPage")
     public ResEntity getPage(Page<User> page, User user) {
-        return ResEntity.resEntity(service.page(page,
+        return ResEntity.<IPage>resEntity(service.page(page,
                 Wrappers.<User>query().lambda()
         ));
     }

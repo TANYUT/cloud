@@ -23,7 +23,7 @@ public enum ResMsgEnum {
     UPDATE_ERROR("修改失败"),
     DELETE_SUCCESS("删除成功"),
     DELETE_ERROR("删除失败"),
-    MISSING_PARAMS("参数缺失"),
+    MISSING_PARAMS(" 参数缺失"),
     NO_ACCESS("无权访问"),
     NO_RIGHT_TO_DELETE("无权删除"),
     UNAUTHORIZED_ACCESS("非法访问"),

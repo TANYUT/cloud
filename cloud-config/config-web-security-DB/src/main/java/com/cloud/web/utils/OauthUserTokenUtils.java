@@ -32,7 +32,13 @@ public class OauthUserTokenUtils {
     }
 
     /**
-     * 获取用户
+     * <p>
+     * 获取登录用户的信息
+     * </p>
+     *
+     * @return: com.cloud.web.server.impl.OauthUser
+     * @Author: au .T
+     * @Date: 2019/5/6 10:20
      */
     public static OauthUser getOauthUser() {
         Authentication auth = getAuthentication();

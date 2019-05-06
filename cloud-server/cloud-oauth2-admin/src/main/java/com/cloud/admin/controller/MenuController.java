@@ -11,7 +11,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.annotations.*;
 
-import static com.cloud.web.utils.ResEntity.resEntity;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -48,7 +49,6 @@ public class MenuController {
         ));
     }
 
-
     @ApiOperation(value = "ID查询Menu", httpMethod = "GET", notes = "", response = ResEntity.class,
             extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:16", value = "au.t@foxmail.com"))
     )
@@ -60,6 +60,10 @@ public class MenuController {
         return ResEntity.resEntity(service.getById(menuId));
     }
 
+    @GetMapping({"/tree"})
+    public ResEntity getTree() {
+        return ResEntity.<List>resEntity(MenuTreeUtil.treeMenu(this.service.list()));
+    }
 
     @ApiOperation(value = "新增Menu", httpMethod = "POST", notes = "", response = ResEntity.class,
             extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:16", value = "au.t@foxmail.com"))
@@ -73,7 +77,6 @@ public class MenuController {
         return ResEntity.resEntity(service.save(menu));
     }
 
-
     @ApiOperation(value = "ID修改Menu", httpMethod = "PUT", notes = "", response = ResEntity.class,
             extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:16", value = "au.t@foxmail.com"))
     )
@@ -84,6 +87,7 @@ public class MenuController {
     public ResEntity update(@RequestBody Menu menu) {
         return ResEntity.resEntity(service.updateById(menu));
     }
+
 
     @ApiOperation(value = "ID删除Menu", httpMethod = "DELETE", notes = "", response = ResEntity.class,
             extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:16", value = "au.t@foxmail.com"))
@@ -96,9 +100,5 @@ public class MenuController {
         return ResEntity.resEntity(service.removeById(menuId));
     }
 
-    @GetMapping({"/tree"})
-    public ResEntity getTree() {
-        return ResEntity.resEntity(MenuTreeUtil.treeMenu(this.service.list()));
-    }
 
 }

@@ -49,6 +49,8 @@
       <module name="eureka" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="generator" target="1.8" />
+      <module name="modules-api" target="1.8" />
+      <module name="modules-server" target="1.8" />
       <module name="nacos" target="1.8" />
       <module name="nacos-client" target="1.8" />
       <module name="nacos-console" target="1.8" />
