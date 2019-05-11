@@ -2,58 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79b624a7-47e6-43b7-aa52-f529d3a78720" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/java/com/cloud/generator/main/CodeGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/java/com/cloud/generator/utils/CodeGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/resources/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/resources/template/controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/com-code-generation/src/main/resources/template/controller.java.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/config/WebClientBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/config/WebClientBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/security/WebSecurityRoleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/security/WebSecurityRoleFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/security/config/IgnoreUrlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/security/config/IgnoreUrlConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/server/impl/OauthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/server/impl/TokenUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/utils/OauthUserTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/utils/TokenUserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-gateway/src/main/java/com/cloud/gateway/GatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-gateway/src/main/java/com/cloud/gateway/GatewayApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-gateway/src/main/java/com/cloud/gateway/filter/StripPrefixFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/Oauth2AdminApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/Oauth2AdminApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/OauthClientDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/OauthClientDetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/RoleMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/UserMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/UserRoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/entity/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/entity/RoleMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/entity/UserMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/entity/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/mapper/MenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/mapper/RoleMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/mapper/UserMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/mapper/UserRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/config/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/config/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/config/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/config/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/server/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/MenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/RoleMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/UserMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/UserRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/impl/MenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/impl/RoleMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/impl/UserMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/service/impl/UserRoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/mapper/RoleMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/mapper/UserMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/Liunx.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/txt/liuxn/Liunx.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/liuxn/Liunx.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-common/eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-modules/dome-gateway/target/" />
@@ -153,12 +105,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/txt/liuxn/Liunx.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1108">
-                <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+              <first_editor relative-caret-position="308">
+                <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -179,12 +131,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/txt/Liunx.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="548">
-                <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="4" />
+              <first_editor>
+                <caret column="21" selection-start-column="21" selection-end-column="21" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/txt/test.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="293">
+                <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -208,15 +172,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/txt/liuxn/OpenSSH.png">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/provisioning/InMemoryUserDetailsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -253,7 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectOne</find>
       <find>ignore</find>
       <find>set</find>
       <find>spring-cloud-starter-security</find>
@@ -283,6 +237,7 @@
       <find>oauth/token</find>
       <find>authenticated</find>
       <find>traiPlanVOMap</find>
+      <find>lusifer</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -296,7 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/utils/MenuTreeUtil.java" />
         <option value="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/resources/META-INF/spring.factories" />
         <option value="$PROJECT_DIR$/cloud-server/cloud-oauth2-admin/src/main/java/com/cloud/admin/controller/UserController.java" />
         <option value="$PROJECT_DIR$/cloud-config/config-web-security-DB/src/main/java/com/cloud/web/utils/UserTokenUtils.java" />
@@ -342,11 +296,12 @@
         <option value="$PROJECT_DIR$/cloud-server/cloud-oauth2-autoconfigure/src/main/java/com/cloud/admin/sever/config/ClientOauth.java" />
         <option value="$PROJECT_DIR$/cloud-server/cloud-oauth2-autoconfigure/src/main/java/com/cloud/admin/sever/config/ClientOauthSession.java" />
         <option value="$PROJECT_DIR$/cloud-server/cloud-oauth2-autoconfigure/src/main/java/com/cloud/admin/sever/config/SecurityWebApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/txt/mybatis/mybatis-collection.txt" />
         <option value="$PROJECT_DIR$/txt/Liunx.md" />
         <option value="$PROJECT_DIR$/cloud-server/pom.xml" />
         <option value="$PROJECT_DIR$/txt/liuxn/Liunx.md" />
+        <option value="$PROJECT_DIR$/txt/test.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -470,12 +425,6 @@
               <item name="txt" type="462c0819:PsiDirectoryNode" />
               <item name="liuxn" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="txt" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -492,7 +441,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557570932250" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557573054608" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-server/atuh-server/src/main/java/com/cloud" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-cloud-gateway-oauth2-sso-sample-application" />
@@ -694,7 +643,7 @@
       <workItem from="1557380267814" duration="834000" />
       <workItem from="1557400799905" duration="2826000" />
       <workItem from="1557555205090" duration="1106000" />
-      <workItem from="1557558990127" duration="8639000" />
+      <workItem from="1557558990127" duration="9186000" />
     </task>
     <task id="LOCAL-00001" summary="docker更新">
       <created>1555588918203</created>
@@ -739,10 +688,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370520000" />
+    <option name="totallyTimeSpent" value="371067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6311953" visible="true" weight="0.24466951" />
       <window_info id="Designer" order="1" />
@@ -1164,16 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="2" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-server/cloud-oauth2-autoconfigure/src/main/java/com/cloud/admin/sever/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1225,16 +1165,6 @@
     <entry file="file://$PROJECT_DIR$/txt/liuxn/LVM.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/Liunx.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="548">
-            <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/txt/liuxn/OpenSSH.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1265,8 +1195,28 @@
     <entry file="file://$PROJECT_DIR$/txt/liuxn/Liunx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1108">
-            <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+          <first_editor relative-caret-position="308">
+            <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/test.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="293">
+            <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="21" selection-start-column="21" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>

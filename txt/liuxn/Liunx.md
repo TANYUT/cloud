@@ -73,22 +73,22 @@ OpenSSH 服务器的主要配置文件为 /etc/ssh/sshd_config 置信息都在�
  关机:shutdown -h now
 #####Linux 文件权限管理
     -：普通文件
-    rw-：说明用户 lusifer 有读写权限，没有运行权限
-    r--：表示用户组 lusifer 只有读权限，没有写和运行的权限
+    rw-：说明用户 user 有读写权限，没有运行权限
+    r--：表示用户组 user 只有读权限，没有写和运行的权限
     r--：其他用户只有读权限，没有写权限和运行的权限   
     
--rw-r--r-- 	|1 	|lusifer |	lusifer 	|675 	|Oct 26 17:20 |	.profile
+-rw-r--r-- 	|1 	|user |	user 	|675 	|Oct 26 17:20 |	.profile
  ---- | ----- |  -----  | ----- |----- |----- |----- |
 文档类型及权限 |	连接数| 	文档所属用户 |	文档所属组 |	文档大小| 	文档最后被修改日期 	|文档名称
  
 (?) - |	rw- 	|r-- |	r--|
 ---- | ----- |  -----  | -----  |
 文档类型| 	文档所有者权限（user） |	文档所属用户组权限（group） |	其他用户权限（other）
-- d表示目录
-- l表示软连接
-- 表示文件
-- c表示串行端口字符设备文件
-- b表示可供存储的块设备文件
+- d 表示目录
+- l 表示软连接
+- - 表示文件
+- c 表示串行端口字符设备文件
+- b 表示可供存储的块设备文件
 - 余下的字符 3 个字符为一组。r 只读，w 可写，x 可执行，- 表示无此权限
 
 ###### 更改操作权限
@@ -100,14 +100,15 @@ chmod
 chmod  |	[who] 	|[+、-、=] |[mode] 文件名|
 ---- | ----- |  -----  | -----  |
 chmod | u：用户user、g：用户组group 、 o：表示其他用户、a：表示所有用户是系统默认的| +：表示添加某个权限 -：表示取消某个权限 =：赋予给定的权限，取消文档以前的所有权限 |	表示可执行的权限，可以是 r、w、x
+
 示例 
  
-    lusifer@UbuntuBase:~$ ls -al test.txt 
-    -rw-rw-r-- 1 lusifer lusifer 6 Nov  2 21:47 test.txt
-    lusifer@UbuntuBase:~$ chmod u=rwx,g+r,o+r test.txt 
-    lusifer@UbuntuBase:~$ ls -al test.txt 
-    -rwxrw-r-- 1 lusifer lusifer 6 Nov  2 21:47 test.txt
-    lusifer@UbuntuBase:~$
+    user@UbuntuBase:~$ ls -al test.txt 
+    -rw-rw-r-- 1 user user 6 Nov  2 21:47 test.txt
+    user@UbuntuBase:~$ chmod u=rwx,g+r,o+r test.txt 
+    user@UbuntuBase:~$ ls -al test.txt 
+    -rwxrw-r-- 1 user user 6 Nov  2 21:47 test.txt
+    user@UbuntuBase:~$
 
 数字设定法
 - 0 表示没有任何权限
@@ -127,12 +128,12 @@ user |	group |	others
 
 若要 r-x 属性则 4+1=5
 
-    lusifer@UbuntuBase:~$ chmod 777 test.txt 
-    lusifer@UbuntuBase:~$ ls -al test.txt 
-    -rwxrwxrwx 1 lusifer lusifer 6 Nov  2 21:47 test.txt    
-    lusifer@UbuntuBase:~$ chmod 770 test.txt 
-    lusifer@UbuntuBase:~$ ls -al test.txt 
-    -rwxrwx--- 1 lusifer lusifer 6 Nov  2 21:47 test.txt
+    user@UbuntuBase:~$ chmod 777 test.txt 
+    user@UbuntuBase:~$ ls -al test.txt 
+    -rwxrwxrwx 1 user user 6 Nov  2 21:47 test.txt    
+    user@UbuntuBase:~$ chmod 770 test.txt 
+    user@UbuntuBase:~$ ls -al test.txt 
+    -rwxrwx--- 1 user user 6 Nov  2 21:47 test.txt
 
 ##### Liunx 软件包管理
 APT(Advanced Packaging Tool) 是 Debian/Ubuntu 类 Linux 系统中的软件包管理程序, 使用它可以找到想要的软件包, 而且安装、卸载、更新都很简便；也可以用来对 Ubuntu 进行升级; APT 的源文件为 /etc/apt/ 目录下的 sources.list 文件。 \
