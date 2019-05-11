@@ -1,0 +1,29 @@
+##### Docker 
+//redis 为例
+//创建一个新的容器 并且运行 \
+//-p: 端口映射，格式为：主机(宿主)端口:容器端口 \
+//-d: 后台运行容器，并返回容器ID； \
+//--name redis-sever: 为容器指定一个名称: redis-sever \
+//-v /data:/data  主机的目录 /data 映射到容器的 /data。 \
+docker run -p6397:6397 -d --name redis-sever docker.io/redis:3.0.7 redis-server --port 6397 //运行redis server \
+//-h "mars": 指定容器的hostname；\
+docker run -it --name redis-client  docker.io/redis:3.0.7 redis-cli -h 172.17.0.1 -p  6379  //运行redis client \
+//注意在连接数据库等其他服务 不要用127.0.0.1   localhost \
+//docker在部署服务的时候   每一个服务都隔离了 每一个服务都肚子自一个虚拟机 可以怎么理解 \
+//所以在连接其他服务的时候 用宿主 主机的真实 IP \
+
+//--net="bridge": 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型； \
+
+docker ps -a    //查看镜像被那个容器占用  CONTAINER ID  容器ID \
+docker start   redis-server \
+docker exec -d  redis-server --port 6379  \
+docker stop [CONTAINER ID]  //停止容器 \
+docker rm [CONTAINER ID]  //删除容器  \
+
+
+
+
+docker images   //查看docker 程序镜像   IMAGE ID  程序ID
+docker rmi [IMAGE ID]  //删除镜像
+
+
