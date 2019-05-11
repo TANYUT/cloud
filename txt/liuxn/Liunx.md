@@ -185,7 +185,7 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe 
 
 清理无用的包: `apt-get clean && apt-get autoclean` 
 
-查看被哪些包依赖: apt-get check    
+查看被哪些包依赖:` apt-get check `    
 
 #
 
@@ -235,7 +235,7 @@ set global validate_password_policy=0;
 select @@validate_password_length;
 set global validate_password_length=1;
  ```
-######常用命令
+###### 常用命令
 启动：`service mysql start` 
 
 停止：`service mysql stop` 
@@ -323,3 +323,10 @@ source /etc/profile
 su user
 source /etc/profile
 ```
+#####[Linux LVM 磁盘扩容](LVM.md)
+#### 附：Linux LVM 磁盘扩容
+
+
+
+
+
