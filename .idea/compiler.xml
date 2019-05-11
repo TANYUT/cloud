@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="atuh-server" />
         <module name="cloud-gateway" />
-        <module name="cloud-oauth2-admin" />
         <module name="cloud-oauth2-upms (1)" />
         <module name="config-web-security-DB" />
       </profile>
@@ -24,11 +24,14 @@
       <module name="cloud-generator" target="1.8" />
       <module name="cloud-modules" target="1.8" />
       <module name="cloud-oauth2" target="1.8" />
+      <module name="cloud-oauth2-admin" target="1.8" />
+      <module name="cloud-oauth2-autoconfigure" target="1.8" />
       <module name="cloud-oauth2-upms" target="1.8" />
       <module name="cloud-oauth2-upms (1)" target="1.8" />
       <module name="cloud-oauth2-upms (2)" target="1.8" />
       <module name="cloud-upms" target="1.8" />
       <module name="cloud-web-mybatis" target="1.8" />
+      <module name="cloud-zipkin" target="1.8" />
       <module name="com" target="1.8" />
       <module name="com-code-generation" target="1.8" />
       <module name="com-config" target="1.8" />
@@ -66,6 +69,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="atuh-server" options="-parameters" />
       <module name="auth" options="-parameters" />
       <module name="cloud-auth" options="-parameters" />
       <module name="cloud-config (1)" options="-parameters" />
@@ -74,10 +78,12 @@
       <module name="cloud-generator" options="-parameters" />
       <module name="cloud-oauth2" options="-parameters" />
       <module name="cloud-oauth2-admin" options="-parameters" />
+      <module name="cloud-oauth2-autoconfigure" options="-parameters" />
       <module name="cloud-oauth2-upms" options="-parameters" />
       <module name="cloud-oauth2-upms (2)" options="-parameters" />
       <module name="cloud-upms" options="-parameters" />
       <module name="cloud-web-mybatis" options="-parameters" />
+      <module name="cloud-zipkin" options="-parameters" />
       <module name="com" options="-parameters" />
       <module name="com-code-generation" options="-parameters" />
       <module name="com-config" options="-parameters" />

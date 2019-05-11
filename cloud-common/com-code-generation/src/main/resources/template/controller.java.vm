@@ -39,8 +39,8 @@ public class ${className}Controller {
             @ApiImplicitParam(name = "size", value = "页显示记录数", required = true, paramType = "query", dataType = "String"),
     })
     @GetMapping("/getPage")
-    public ResEntity getPage(Page<${className}> page, ${className} ${classname}) {
-        return  ResEntity.<IPage>resEntity(service.page(page,
+    public ResEntity getPage(Page<${className}> page, ${className} cond) {
+        return ResEntity.<IPage>resEntity(service.page(page,
                 Wrappers.<${className}>query().lambda()
         ));
     }

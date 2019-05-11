@@ -1,12 +1,15 @@
-package com.cloud.admin.server.config;
+package com.cloud.aoth.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -14,10 +17,16 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
+import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <p>
@@ -25,7 +34,7 @@ import javax.sql.DataSource;
  * </p>
  *
  * @Title AuthorizationServerConfiguration.java
- * @Package com.cloud.admin.server.config
+ * @Package com.cloud.aoth.config
  * @Author <a href="mailto:au.t@foxmail.com">au .T</a>
  * @Date 2019/5/3 16:14
  */
@@ -44,9 +53,9 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
 
+
     @Bean
     public ClientDetailsService jdbcClientDetails() {
-        // 基于 JDBC 实现，需要事先在数据库配置客户端信息
         return new JdbcClientDetailsService(dataSource);
     }
 
@@ -63,6 +72,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     public TokenStore tokenStore() {
         //return new JdbcTokenStore(dataSource);//数据库存储Token
         return new RedisTokenStore(redisConnectionFactory);//Redis存储Token
+
         //return new InMemoryTokenStore();//内存存储Token
     }
 
@@ -76,17 +86,11 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.withClientDetails(jdbcClientDetails());
-//        clients.inMemory()
-//                .withClient("client1")//用于标识用户ID
-//                .authorizedGrantTypes("authorization_code","client_credentials","password","implicit","refresh_token")//授权方式
-//                .scopes("test")//授权范围
-//                .secret(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("123456"));//客户端安全码,secret密码配置从 Spring Security 5.0开始必须以 {bcrypt}+加密后的密码 这种格式填写;
     }
-
-//
 
     /**
      * 用来配置令牌端点(Token Endpoint)的安全约束.
+     * PasswordEncoderUtil
      *
      * @param security
      * @throws Exception
@@ -94,7 +98,8 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) {
         /* 配置token获取合验证时的策略 */
-        security.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()").allowFormAuthenticationForClients();
+        security.tokenKeyAccess("permitAll()")
+                .checkTokenAccess("isAuthenticated()").allowFormAuthenticationForClients();
     }
 
     /**
@@ -107,5 +112,37 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
         // 配置tokenStore
         endpoints.authenticationManager(authenticationManager).tokenStore(tokenStore()).userDetailsService(userDetailsService);
+//        endpoints.tokenServices(defaultTokenServices());
     }
+
+    /**
+     * <p>注意，自定义TokenServices的时候，需要设置@Primary，否则报错，</p>
+     * 自定义的token
+     * 认证的token是存到redis里的
+     * @return
+     */
+    /**
+     * <p>
+     * 注意，自定义TokenServices的时候，需要设置@Primary，否则报错，
+     * 自定义的token
+     * 认证的token是存到redis里的
+     * </p>
+     *
+     * @return: org.springframework.security.oauth2.provider.token.DefaultTokenServices
+     * @Author: au .T
+     * @Date: 2019/5/7 17:26
+     */
+//    @Primary
+//    @Bean
+//    public DefaultTokenServices defaultTokenServices() {
+//        DefaultTokenServices tokenServices = new DefaultTokenServices();
+//        tokenServices.setTokenStore(tokenStore());
+//        tokenServices.setSupportRefreshToken(true);
+//        //tokenServices.setClientDetailsService(clientDetails());
+//        // token有效期自定义设置，默认12小时
+//        tokenServices.setAccessTokenValiditySeconds(60 * 60 * 12);
+//        // refresh_token默认30天
+//        tokenServices.setRefreshTokenValiditySeconds(60 * 60 * 24 * 7);
+//        return tokenServices;
+//    }
 }

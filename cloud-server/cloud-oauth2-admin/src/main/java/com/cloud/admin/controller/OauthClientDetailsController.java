@@ -38,56 +38,10 @@ public class OauthClientDetailsController {
             @ApiImplicitParam(name = "size", value = "页显示记录数", required = true, paramType = "query", dataType = "String"),
     })
     @GetMapping("/getPage")
-    public ResEntity getPage(Page<OauthClientDetails> page, OauthClientDetails oauthClientDetails) {
+    public ResEntity getPage(Page<OauthClientDetails> page, OauthClientDetails cond) {
         return ResEntity.<IPage>resEntity(service.page(page,
                 Wrappers.<OauthClientDetails>query().lambda()
+                        .eq(false, OauthClientDetails::getClientId, cond.getClientId())
         ));
-    }
-
-
-    @ApiOperation(value = "ID查询OauthClientDetails", httpMethod = "GET", notes = "", response = ResEntity.class,
-            extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:17", value = "au.t@foxmail.com"))
-    )
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "clientId", value = "主键ID", required = true, paramType = "query", dataType = "String"),
-    })
-    @GetMapping("/{clientId}")
-    public ResEntity getById(@PathVariable("clientId") String clientId) {
-        return ResEntity.resEntity(service.getById(clientId));
-    }
-
-
-    @ApiOperation(value = "新增OauthClientDetails", httpMethod = "POST", notes = "", response = ResEntity.class,
-            extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:17", value = "au.t@foxmail.com"))
-    )
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "clientId", value = "主键ID", required = true, paramType = "query", dataType = "String"),
-    })
-    @PostMapping
-    public ResEntity save(@RequestBody OauthClientDetails oauthClientDetails) {
-        return ResEntity.resEntity(service.save(oauthClientDetails));
-    }
-
-
-    @ApiOperation(value = "ID修改OauthClientDetails", httpMethod = "PUT", notes = "", response = ResEntity.class,
-            extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:17", value = "au.t@foxmail.com"))
-    )
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "clientId", value = "主键ID", required = true, paramType = "query", dataType = "String"),
-    })
-    @PutMapping
-    public ResEntity update(@RequestBody OauthClientDetails oauthClientDetails) {
-        return ResEntity.resEntity(service.updateById(oauthClientDetails));
-    }
-
-    @ApiOperation(value = "ID删除OauthClientDetails", httpMethod = "DELETE", notes = "", response = ResEntity.class,
-            extensions = @Extension(properties = @ExtensionProperty(name = "au.T/2019-05-03 15:33:17", value = "au.t@foxmail.com"))
-    )
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "clientId", value = "主键ID", required = true, paramType = "query", dataType = "String"),
-    })
-    @DeleteMapping("/{clientId}")
-    public ResEntity removeById(@PathVariable String clientId) {
-        return ResEntity.resEntity(service.removeById(clientId));
     }
 }

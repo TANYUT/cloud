@@ -12,15 +12,15 @@ import java.util.Date;
 
 /**
  * <p>
- * Menu实体类
+ *
  * </p>
  *
- * @Title: MenuController.java
- * @Package: com.cloud.admin.entity;
- * @Author <a href="mailto:au.t@foxmail.com">au.T</a>
- * @Date: 2019-05-03 15:33:16
- * @Version: 1.0.0-SNAPSHOT
+ * @Title: Menu.java
+ * @Package: com.cloud.admin.entity
+ * @Author: <a href="mailto:tuanyu@sinotn.com">au .T</a>
+ * @Date: 2019/5/7 13:57
  */
+
 @Data
 @TableName("sys_menu")
 @ApiModel(value = "sys_menu")

@@ -3,7 +3,7 @@ package com.cloud.admin.server.impl;
 import cn.hutool.core.util.StrUtil;
 import com.cloud.admin.entity.User;
 import com.cloud.admin.service.UserService;
-import com.cloud.web.server.impl.OauthUser;
+import com.cloud.web.server.impl.TokenUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.GrantedAuthority;
@@ -52,6 +52,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException("用户名密码错误");
         }
         Set<String> authsSet = new HashSet<>();
+        authsSet.add("ADMIN");
 //        if (ArrayUtil.isNotEmpty(info.getRoles())) {
 //            // 获取角色
 //            Arrays.stream(info.getRoles()).forEach(role -> dbAuthsSet.add(SecurityConstants.WEB_ROLE_PREFIX + role));
@@ -60,6 +61,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 //        }
         Collection<? extends GrantedAuthority> authorities
                 = AuthorityUtils.createAuthorityList(authsSet.toArray(new String[0]));
-        return new OauthUser(userName, userEntity.getPassword(), authorities);
+        return new TokenUser(userName, userEntity.getPassword(), authorities);
     }
 }

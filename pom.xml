@@ -10,6 +10,7 @@
     <modules>
         <module>cloud-server</module>
         <module>cloud-config</module>
+        <!--<module>cloud-common</module>-->
         <!--<module>modules-api</module>-->
         <!--<module>modules-server</module>-->
     </modules>

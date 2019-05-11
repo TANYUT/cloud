@@ -10,13 +10,14 @@ server:
   #      scope: upmsApp
   #    resource:
   #      token-info-uri: http://localhost:8050/oauth/check_token
+
+
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
     default-property-inclusion: non_null
   redis:
-    remote: false        #cachecloud 获取
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:6379}
     password:
@@ -26,7 +27,7 @@ spring:
     username: guest
     password: guest
   application:
-    name: cloud-oauth2-upms
+    name: cloud-oauth2-admin
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/upms?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
@@ -54,11 +55,11 @@ spring:
         server-addr: 127.0.0.1:8848
         file-extension: yml
 
-# 直接放行URL
-ignore:
-  urls:
-    - /actuator/**
-    - /user/password/**
-    - /user/info/*
-    - /log/**
+## 直接放行URL
+#ignore:
+#  urls:
+#    - /actuator/**
+#    - /user/password/**
+#    - /user/info/*
+#    - /log/**
 

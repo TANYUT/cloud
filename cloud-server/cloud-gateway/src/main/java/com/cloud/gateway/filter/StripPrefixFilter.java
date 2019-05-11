@@ -33,6 +33,7 @@ public class StripPrefixFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest().mutate()
                 .headers(httpHeaders -> httpHeaders.remove("from")) //清洗请求头中from 参数
                 .build();
+        System.err.println(request.getURI());
         addOriginalRequestUrl(exchange, request.getURI());
         String path = request.getURI().getRawPath();
         String newPath = "/" + Arrays.stream(StringUtils.tokenizeToStringArray(path, "/"))

@@ -22,7 +22,7 @@ import java.util.List;
 @Data
 @RefreshScope
 @Component
-//@ConditionalOnExpression("!'${ignore}'.isEmpty()")
+@ConditionalOnExpression("!'${ignore}'.isEmpty()")
 @ConfigurationProperties(prefix = "ignore")
 public class IgnoreUrlConfig {
     /**
