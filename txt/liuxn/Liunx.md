@@ -323,8 +323,7 @@ source /etc/profile
 su user
 source /etc/profile
 ```
-#####[Linux LVM 磁盘扩容](LVM.md)
-#### 附：Linux LVM 磁盘扩容
+##### [Linux LVM 磁盘扩容](LVM.md)
 
 
 

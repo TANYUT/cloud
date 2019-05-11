@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79b624a7-47e6-43b7-aa52-f529d3a78720" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/docker/Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/docker/Docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/docker/docker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/txt/docker/docker.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/liuxn/LVM.png" beforeDir="false" afterPath="$PROJECT_DIR$/txt/liuxn/imgs/LVM.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/txt/liuxn/Liunx.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/liuxn/Liunx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/liuxn/OpenSSH.png" beforeDir="false" afterPath="$PROJECT_DIR$/txt/liuxn/imgs/OpenSSH.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-common/eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-modules/dome-gateway/target/" />
@@ -107,12 +102,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/txt/liuxn/Liunx.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="401">
-                <caret line="324" column="3" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
+              <first_editor relative-caret-position="402">
+                <caret line="323" column="19" lean-forward="true" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -151,11 +146,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/txt/docker/Docker.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="65">
+              <first_editor relative-caret-position="-522">
                 <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
               </first_editor>
               <second_editor />
@@ -302,10 +297,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/txt/liuxn/imgs/LVM.md" />
         <option value="$PROJECT_DIR$/txt/liuxn/LVM.md" />
-        <option value="$PROJECT_DIR$/txt/liuxn/Liunx.md" />
         <option value="$PROJECT_DIR$/txt/docker/docker.txt" />
         <option value="$PROJECT_DIR$/txt/docker/Dockerfile.md" />
         <option value="$PROJECT_DIR$/txt/docker/Docker.md" />
+        <option value="$PROJECT_DIR$/txt/liuxn/Liunx.md" />
       </list>
     </option>
   </component>
@@ -417,6 +412,12 @@
               <item name="txt" type="462c0819:PsiDirectoryNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="txt" type="462c0819:PsiDirectoryNode" />
+              <item name="liuxn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -433,7 +434,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557583600770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557584211615" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-server/atuh-server/src/main/java/com/cloud" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-cloud-gateway-oauth2-sso-sample-application" />
@@ -635,7 +636,7 @@
       <workItem from="1557380267814" duration="834000" />
       <workItem from="1557400799905" duration="2826000" />
       <workItem from="1557555205090" duration="1106000" />
-      <workItem from="1557558990127" duration="18985000" />
+      <workItem from="1557558990127" duration="19034000" />
     </task>
     <task id="LOCAL-00001" summary="docker更新">
       <created>1555588918203</created>
@@ -680,7 +681,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380866000" />
+    <option name="totallyTimeSpent" value="380915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1141,28 +1142,8 @@
     <entry file="file://$PROJECT_DIR$/txt/liuxn/imgs/LV1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt/liuxn/LVM.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1826">
-            <caret line="113" column="3" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/txt/liuxn/imgs/OpenSSH.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/txt/liuxn/Liunx.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="401">
-            <caret line="324" column="3" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/txt/test.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -1194,8 +1175,28 @@
     <entry file="file://$PROJECT_DIR$/txt/docker/Docker.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="65">
+          <first_editor relative-caret-position="-522">
             <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/liuxn/LVM.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1826">
+            <caret line="113" column="3" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt/liuxn/Liunx.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="402">
+            <caret line="323" column="19" lean-forward="true" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
