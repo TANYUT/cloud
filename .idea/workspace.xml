@@ -4,8 +4,6 @@
     <list default="true" id="79b624a7-47e6-43b7-aa52-f529d3a78720" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/Liunx.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt/liuxn/Liunx.md" beforeDir="false" afterPath="$PROJECT_DIR$/txt/liuxn/Liunx.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-common/eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-modules/dome-gateway/target/" />
@@ -135,8 +133,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="21" selection-start-column="21" selection-end-column="21" />
+              <first_editor relative-caret-position="22">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -147,8 +145,8 @@
         <entry file="file://$PROJECT_DIR$/txt/test.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="293">
-                <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="29" />
+              <first_editor relative-caret-position="315">
+                <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="56" />
               </first_editor>
               <second_editor />
             </state>
@@ -407,24 +405,6 @@
               <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="txt" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="txt" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="txt" type="462c0819:PsiDirectoryNode" />
-              <item name="git" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="txt" type="462c0819:PsiDirectoryNode" />
-              <item name="liuxn" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -441,7 +421,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557573054608" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557573283290" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-server/atuh-server/src/main/java/com/cloud" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-cloud-gateway-oauth2-sso-sample-application" />
@@ -643,7 +623,7 @@
       <workItem from="1557380267814" duration="834000" />
       <workItem from="1557400799905" duration="2826000" />
       <workItem from="1557555205090" duration="1106000" />
-      <workItem from="1557558990127" duration="9186000" />
+      <workItem from="1557558990127" duration="9415000" />
     </task>
     <task id="LOCAL-00001" summary="docker更新">
       <created>1555588918203</created>
@@ -688,7 +668,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371067000" />
+    <option name="totallyTimeSpent" value="371296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1205,8 +1185,8 @@
     <entry file="file://$PROJECT_DIR$/txt/test.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="293">
-            <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="29" />
+          <first_editor relative-caret-position="315">
+            <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="56" />
           </first_editor>
           <second_editor />
         </state>
@@ -1215,8 +1195,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <first_editor relative-caret-position="22">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           </first_editor>
           <second_editor />
         </state>
