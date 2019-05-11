@@ -84,7 +84,7 @@ OpenSSH 服务器的主要配置文件为：` /etc/ssh/sshd_config 置信息都�
  
  重启:reboot     shutdown -r now
  关机:shutdown -h now
-#####Linux 文件权限管理
+##### Linux 文件权限管理
     -：普通文件
     rw-：说明用户 user 有读写权限，没有运行权限
     r--：表示用户组 user 只有读权限，没有写和运行的权限
@@ -267,7 +267,7 @@ set global validate_password_length=1;
 
 设置所有者: `chown -R root:root /usr/local/java/`
 
-###配置系统环境变量
+### 配置系统环境变量
 
 系统环境变量配置文件: `/etc/environment`
 
@@ -312,7 +312,7 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 ```
- ####使用户环境变量生效
+#### 使用户环境变量生效
 ```
 source /etc/profile
 ```
