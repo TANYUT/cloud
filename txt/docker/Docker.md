@@ -4,6 +4,11 @@
 - 容器 `Container`
 - 仓库 `Repository`
 
+
+#####  Docker 镜像
+
+[Docker Hub官方镜像地址](https://hub.docker.com/search/?q=&type=image)
+
 Docker  |	面向对象|
 |----|----|
 容器 	| 对象
@@ -17,11 +22,6 @@ Docker  |	面向对象|
 主机(Host) |	一个物理或者虚拟的机器用于执行 Docker 守护进程和容器。
 仓库(Registry) 	|Docker 仓库用来保存镜像，可以理解为代码控制中的代码仓库。Docker Hub(https://hub.docker.com ) 提供了庞大的镜像集合供使用。
 Docker Machine |	Docker Machine是一个简化Docker安装的命令行工具，通过一个简单的命令行即可在相应的平台上安装Docker，比如VirtualBox、 Digital Ocean、Microsoft Azure。
-
-
-#####  Docker 镜像
-
-[Docker Hub官方镜像地址](https://hub.docker.com/search/?q=&type=image)
 
 ###### Docker 获取镜像
 ```
@@ -99,20 +99,36 @@ $ sudo systemctl start docker
 
 命令  |	说明 |
 |----- |  -----  |
-docker images [ls] 	| 看docker 程序镜像
+镜像命令  |	说明
+docker images	| 看docker 程序镜像
 docker image prune  | 刪除虚悬镜像
 docker image ls -a  | 中间层镜像
 docker image ls ubuntu  | 根据仓库名列出镜像
 docker image ls ubuntu:16.04 | 列出特定的某个镜像
 docker image ls --digests  | 列出镜像镜像摘要 
-docker rmi [IMAGE ID] 	| 删除[IMAGE ID]镜像
-docker ps -a  | 查看镜像被那个容器占用  CONTAINER ID  容器ID 
-docker stop [CONTAINER ID]| 停止容器 [CONTAINER ID] 
-docker rm [CONTAINER ID]  | 删除容器 [CONTAINER ID] 
+docker rmi <IMAGE ID> 	| 删除<IMAGE ID>镜像
+容器命令  |	说明 |
+docker ps [-a]  | 查看容器 [-a]查看全部
+docker stop <CONTAINER ID>| 停止容器 <CONTAINER ID>
+docker rm <CONTAINER ID>  | 删除容器 <CONTAINER ID>
 docker start    |redis-server 
 docker exec -d  |redis-server --port 6379  
 
+启动一个容器并且进入：
+```
+docker run -it <image(镜像)>  bash
+```
+进入容器：
+```
+docker exec -it <容器> bash
+```
 
+运行镜像:
+```
+docker run -p 8080:8080 image(镜像)  bash
+-p 端口A:端口B  将容器端口A映射到宿主端口B
+ 
+```
 
 
 

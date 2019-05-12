@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="atuh-server" />
         <module name="cloud-gateway" />
         <module name="cloud-oauth2-upms (1)" />
         <module name="config-web-security-DB" />
+        <module name="demo-sever" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="atuh-server" target="1.8" />
       <module name="auth" target="1.8" />
       <module name="client-api" target="1.8" />
       <module name="client-server" target="1.8" />
@@ -53,7 +54,6 @@
       <module name="gateway" target="1.8" />
       <module name="generator" target="1.8" />
       <module name="modules-api" target="1.8" />
-      <module name="modules-server" target="1.8" />
       <module name="nacos" target="1.8" />
       <module name="nacos-client" target="1.8" />
       <module name="nacos-console" target="1.8" />
@@ -99,6 +99,7 @@
       <module name="demo-server (1)" options="-parameters" />
       <module name="demo-server-a" options="" />
       <module name="demo-server-b" options="-parameters" />
+      <module name="demo-sever" options="-parameters" />
       <module name="demo-web-flux" options="-parameters" />
       <module name="dome-gateway" options="-parameters" />
       <module name="eureka" options="-parameters" />

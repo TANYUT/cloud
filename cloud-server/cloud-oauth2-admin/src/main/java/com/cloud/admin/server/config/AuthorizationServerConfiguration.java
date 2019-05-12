@@ -116,12 +116,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     }
 
     /**
-     * <p>注意，自定义TokenServices的时候，需要设置@Primary，否则报错，</p>
-     * 自定义的token
-     * 认证的token是存到redis里的
-     * @return
-     */
-    /**
      * <p>
      * 注意，自定义TokenServices的时候，需要设置@Primary，否则报错，
      * 自定义的token

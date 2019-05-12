@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.cloud</groupId>
-        <artifactId>com-cloud</artifactId>
+        <artifactId>modules-server</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.cloud</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>demo-sever</artifactId>
     <name>${project.artifactId}</name>
-    <description>demo 测试</description>
+    <description>demo-sever 测试</description>
 
 
     <dependencies>

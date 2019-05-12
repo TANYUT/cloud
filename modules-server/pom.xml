@@ -13,6 +13,6 @@
     <packaging>pom</packaging>
     <description>modules 的服务启动</description>
     <modules>
-        <!--<module>cloud-gateway</module>-->
+        <module>demo-sever</module>
     </modules>
 </project>

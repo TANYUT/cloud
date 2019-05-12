@@ -1,16 +1,19 @@
 #### Dockerfile 指令详解
 
-- COPY 复制文件
-```
- COPY <源路径>... <目标路径>
- COPY ["<源路径1>",... "<目标路径>"]
-```
-和 RUN 指令一样，也有两种格式，一种类似于命令行，一种类似于函数调用。
+**FROM java8**  指定基础镜像
 
-COPY 指令将从构建上下文目录中 <源路径> 的文件/目录复制到新的一层的镜像内的 <目标路径> 位置。比如：
-```$xslt
-COPY package.json /usr/src/app/
-```
+**WORKDIR sh命令**  指定工作目录
+
+**RUN sh命令**  运行的shell命令
+
+**COPY <源路径>... <目标路径>** 函数 复制文件 \
+**COPY package.json /usr/src/app/** 命令行 复制文件
+
+**ADD package.json /usr/src/app/** 命令行 复制文件
+
+
+
+
 
 <源路径> 可以是多个，甚至可以是通配符，其通配符规则要满足 Go 的 filepath.Match 规则，如：
 ```
