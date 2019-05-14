@@ -110,7 +110,7 @@ docker rmi <IMAGE ID> 	| 删除<IMAGE ID>镜像
 容器命令  |	说明 |
 docker ps [-a]  | 查看容器 [-a]查看全部
 docker stop <CONTAINER ID>| 停止容器 <CONTAINER ID>
-docker rm <CONTAINER ID>  | 删除容器 <CONTAINER ID>
+docker rm [-f] <CONTAINER ID>  |-f强制  删除容器 <CONTAINER ID>
 docker start    |redis-server 
 docker exec -d  |redis-server --port 6379  
 
@@ -125,8 +125,7 @@ docker exec -it <容器> bash
 
 运行镜像:
 ```
-docker run -p 8080:8080 image(镜像)  bash
--p 端口A:端口B  将容器端口A映射到宿主端口B
+docker run [-it交互模式] [-p 8080宿主端口:8080容器端口(映射)] [--name 指定容器名称] [-d 守护进程]  image(镜像)  [bash ...]
  
 ```
 

@@ -33,7 +33,7 @@ public class WebSecurityUserFilter extends GenericFilterBean {
         System.err.println("请求方法-->" + httpRequest.getMethod());
         System.err.println("请求sessionId-->" + httpRequest.getSession().getId());
         System.err.println("请求用户信息-->" + httpRequest.getUserPrincipal());
-        System.err.println("请求Cookie S-->" + JSONUtil.parseObj(httpRequest.getCookies()[0]));
+//        System.err.println("请求Cookie S-->" + JSONUtil.parseObj(httpRequest.getCookies()[0]));
         System.err.println("请求 PathInfo-->" + (httpRequest.getPathInfo()));
         System.err.println("请求 PathTranslated-->" + (httpRequest.getPathTranslated()));
         System.err.println("请求 ContextPath-->" + (httpRequest.getContextPath()));

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-gateway" />
+        <module name="cloud-oauth2-admin" />
         <module name="cloud-oauth2-upms (1)" />
         <module name="config-web-security-DB" />
         <module name="demo-sever" />
@@ -25,7 +26,6 @@
       <module name="cloud-generator" target="1.8" />
       <module name="cloud-modules" target="1.8" />
       <module name="cloud-oauth2" target="1.8" />
-      <module name="cloud-oauth2-admin" target="1.8" />
       <module name="cloud-oauth2-autoconfigure" target="1.8" />
       <module name="cloud-oauth2-upms" target="1.8" />
       <module name="cloud-oauth2-upms (1)" target="1.8" />
@@ -58,6 +58,7 @@
       <module name="nacos-client" target="1.8" />
       <module name="nacos-console" target="1.8" />
       <module name="netty" target="1.8" />
+      <module name="oauth-server" target="1.8" />
       <module name="server-config" target="1.8" />
       <module name="spring-config" target="1.8" />
       <module name="spring-eureka" target="1.8" />

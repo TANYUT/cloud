@@ -1,4 +1,4 @@
-package com.cloud.aoth.config;
+package com.cloud.admin.server.config;
 
 import com.cloud.web.security.WebSecurityMethodFilter;
 import com.cloud.web.security.WebSecurityRoleFilter;
@@ -26,7 +26,7 @@ import org.springframework.security.web.session.SessionManagementFilter;
  * <p>
  * {@link org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter}
  * WebSecurityConfigurerAdapter用于保护oauth相关的endpoints，同时主要作用于用户的登录(form login,Basic auth)
-
+ *
  * </p>
  *
  * @Title WebSecurityConfiguration.java
@@ -47,8 +47,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
      * @return
      * @throws Exception
      */
-    @Bean
     @Override
+    @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
@@ -69,28 +69,16 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
      * addFilterAt(Filter filter, Class atFilter) 在 atFilter 相同位置添加 filter， 此 filter 不覆盖 filter
      * </p>
      *
-     * @params: [http]
-     * @params: []
-     * @return: voidoauth/token
      * @Author: au .T
      * @Date: 2019/5/7 14:07
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.cors().disable()
-//
-//                .authorizeRequests()//限定签名成功的请求
-//                .antMatchers("/oauth/token").permitAll()//指定任何人都允许使用这些URL
-//                .anyRequest()
-//                .authenticated();//指定任何经过身份验证的用户都允许使用这些URL。
         http
                 .authorizeRequests()
-                .anyRequest().fullyAuthenticated()
-                .antMatchers("/oauth/token").permitAll()
-                .and()
-                .csrf().disable();
-
-
+                .antMatchers("/oauth/**")
+                .permitAll()
+                .anyRequest().authenticated();
     }
 
 

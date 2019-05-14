@@ -2,7 +2,7 @@ server:
   port: 8055
 spring:
   application:
-    name: demo
+    name: demo-server
   cloud:
     nacos:
       discovery:
@@ -13,13 +13,44 @@ spring:
 
 
 
-security:
-  oauth2:
-    client:
-      client-id: upms
-      client-secret: upms
-      access-token-uri: http://localhost:8050/oauth/token
-      user-authorization-uri: http://localhost:8050/oauth/authorize
-      scope: upmsApp
-    resource:
-      token-info-uri: http://localhost:8050/oauth/check_token
+#security:
+#  oauth2:
+#    client:
+#      client-id: upms
+#      client-secret: upms
+#      access-token-uri: http://localhost:8050/oauth/token
+#      user-authorization-uri: http://localhost:8050/oauth/authorize
+#      scope: upmsApp
+#    resource:
+#      token-info-uri: http://localhost:8050/oauth/check_token
+auth-server: http://localhost:8051 # 认证服务器地址
+
+
+#security:
+#  oauth2:
+#    client:
+#      client-id: demo-server # 授权服务器配置的  client id
+#      client-secret: demo-server # 授权服务器配置的client secret
+#      scope: scopes
+#      access-token-uri: ${auth-server}/oauth/token # 获取access token接口
+#      user-authorization-uri: ${auth-server}/oauth/authorize # 获取Authorization Code接口
+#    resource:
+#      token-info-uri: ${auth-server}/oauth/check_token # 验证token的接口 #
+#      user-info-uri: ${auth-server}/user # 一个可以获取认证授权的自定义接口，可以在授权服务器，也可以在其他服务器上 #
+#      prefer-token-info: true # 如果同时配置了token-info-uri 和 user-info-uri，这个现象设置使用哪个取验证授权
+  security:
+    oauth2:
+      client:
+        registration:
+          example:
+            client-id: yours-client-id
+            client-secret: yours-client-secret
+            authorization-grant-type: authorization_code
+            redirect-uri-template: '{baseUrl}/login/oauth2/code/{registrationId}'
+            clientName: gateway
+        provider:
+          example:
+            authorization-uri: http://your-auth.service/oauth/authorize
+            token-uri: https://your-auth.service/oauth/token
+            jwt-key-uri: http://your-auth.service/oauth/token_key #optional you can also provide public key as property value in this application.yml but in this case you should override ReactiveJwtDecoder injection in JwtConfiguration.class
+            userNameAttribute: user_name

@@ -11,6 +11,7 @@
         <module>cloud-server</module>
         <module>cloud-config</module>
         <module>modules-server</module>
+        <!--<module>oauth-server</module>-->
         <!--<module>cloud-common</module>-->
         <!--<module>modules-api</module>-->
     </modules>

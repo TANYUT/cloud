@@ -16,7 +16,7 @@
         <module>cloud-gateway</module>
         <!--<module>atuh-server</module>-->
         <!--<module>cloud-oauth2-autoconfigure</module>-->
-        <!--<module>cloud-oauth2-admin</module>-->
+        <module>cloud-oauth2-admin</module>
         <!--<module>cloud-zipkin</module>-->
     </modules>
 </project>

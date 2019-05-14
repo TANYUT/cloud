@@ -1,15 +1,12 @@
 package com.cloud.web.server.impl;
 
-import cn.hutool.json.JSONUtil;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * <p>

@@ -78,6 +78,7 @@ OpenSSH 服务器的主要配置文件为：` /etc/ssh/sshd_config 置信息都�
  ping | 	测试网络的连通性
  netstat |	显示网络状态信息
  clear |	清屏
+ps -ef|grep [java] |  查看[java]进程
  kill -9	|杀死一个进程 
  shutdown	| 关机 |shutdown [-t seconds] [-rkhncfF] time [message]|-t设定在几秒钟之后进行关机程序   -k并不会真的关机,只是将警告讯息传送给所有只用者 -r关机后重新开机（重启）-h关机后停机 -n不采用正常程序来关机，用强迫的方式杀掉所有执行中的程序后自行关机 -c取消目前已经进行中的关机动作 -f关机时，不做 fcsk 动作(检查 Linux 档系统) -F关机时，强迫进行 fsck 动作 time设定关机的时间  message传送给所有使用者的警告讯息
  tar	| tar 压缩命令  压缩文件夹：tar -zcvf test.tar.gz test\  解压文件夹：tar -zxvf test.tar.gz |tar [-cxzjvf] 压缩打包文档的名称 欲打包目录|-c建立一个归档文件的参数指令  -x解开一个归档文件的参数指令 -z是否需要用 gzip 压缩 -j是否需要用 bzip2 压缩 -v压缩的过程中显示文件 -f使用档名，在 f 之后要立即接档名 -tf查看归档文件里面的文件

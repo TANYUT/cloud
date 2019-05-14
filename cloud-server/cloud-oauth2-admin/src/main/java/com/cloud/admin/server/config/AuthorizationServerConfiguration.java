@@ -1,4 +1,4 @@
-package com.cloud.aoth.config;
+package com.cloud.admin.server.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -43,6 +43,7 @@ import java.util.Map;
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
     @Autowired
+    @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
     @Qualifier("dataSource")
     @Autowired

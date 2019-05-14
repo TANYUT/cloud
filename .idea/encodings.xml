@@ -9,10 +9,12 @@
     <file url="file://$PROJECT_DIR$/cloud-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-server/cloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-server/cloud-oauth2-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-server/cloud-oauth2-autoconfigure" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-server/cloud-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules-server/demo-sever" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../com-config/cloud-core" charset="UTF-8" />
   </component>
 </project>
