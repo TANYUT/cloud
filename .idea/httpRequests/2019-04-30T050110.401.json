@@ -1,7 +1,0 @@
-{
-  "timestamp": "2019-04-30T09:01:10.259+0000",
-  "status": 401,
-  "error": "Unauthorized",
-  "message": "Unauthorized",
-  "path": "/role/page"
-}

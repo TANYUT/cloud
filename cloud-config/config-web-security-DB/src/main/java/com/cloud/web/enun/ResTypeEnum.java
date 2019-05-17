@@ -13,6 +13,9 @@ import lombok.Getter;
  * @Date 2019/4/28 21:10
  */
 public enum ResTypeEnum {
+	/**
+	 *
+	 */
     SUCCESS("success", "成功"),
     ERROR("error", "异常"),
     INFO("info", "提示"),
